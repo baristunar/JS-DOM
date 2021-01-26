@@ -25,3 +25,9 @@ JS-DOM-NOTES
 
        let body = document.body;
        console.log(body);
+
+5-)head :  head : Belge içerisindeki head tagının referansını elde etmek için kullanılır.
+      
+        let head = document.head;
+        console.log(head);
+      
