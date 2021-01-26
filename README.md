@@ -137,3 +137,6 @@ JS-DOM-NOTES
         }
         body.addEventListener("click", findActiveElement);
         body.addEventListener("click", writeActiveElementName);
+
+22-) document.anchors : Bu method kaldırılmaya çalışıyor ve tavsiye edilmiyor. kullanma!
+     detaylı bilgi için <a  href="https://developer.mozilla.org/en-US/docs/Web/API/Document/anchors">TIKLA</a>
