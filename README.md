@@ -96,3 +96,5 @@ JS-DOM-NOTES
 
        let res = document.URL;
         console.log(res);
+
+16-) document.domain : Belgenin domain adı referansını elde etmek için kullanılır.
