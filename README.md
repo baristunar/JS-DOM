@@ -36,7 +36,12 @@ JS-DOM-NOTES
       let res = document.characterSet;
       console.log(res);
       
-7-)inputEncoding : Belgenin karakter kodlamasının referansını elde etmek için kullanılır.
+7-)document.inputEncoding : Belgenin karakter kodlamasının referansını elde etmek için kullanılır.
 
       let res = document.inputEncoding;
       console.log(res); --> UTF-8
+      
+8-) document.title : Belge içerisindeki title tagının referansını almak için kullanılır.
+
+       let title = document.title;
+       console.log(title);
