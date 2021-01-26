@@ -45,3 +45,11 @@ JS-DOM-NOTES
 
        let title = document.title;
        console.log(title);
+       
+9-)  document.compatMode :Belgenin tarayıcı tarafından hangi modda çalıştırıldığının referansını elde etmek için kullanılır.
+
+       --> BackCompat : tuhaf veya rastlantı modu. birşeylerde problem var demektir 
+       --> CSS1compat : standar/normal mod. bunu alırsak problem yok demektir
+      
+       let res = document.compatMode;
+       console.log(res);
