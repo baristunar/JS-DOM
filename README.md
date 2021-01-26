@@ -36,3 +36,7 @@ JS-DOM-NOTES
       let res = document.characterSet;
       console.log(res);
       
+7-)inputEncoding : Belgenin karakter kodlamasının referansını elde etmek için kullanılır.
+
+      let res = document.inputEncoding;
+      console.log(res); --> UTF-8
