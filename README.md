@@ -148,3 +148,8 @@ JS-DOM-NOTES
 24-) document.scripts : Belge içerisindeki script tagına sahip olan tüm elemnaların referanslarını elde etmek için kullanılır.
 
       let scripts = document.scripts; 
+
+25-) document.embeds :Belge içerisindeki embed veya object tagına sahip tüm elemanların referansını elde etmke için kullanılır.Embed HTML tarafında çok
+     kullanılmamalı(img/iframe/video/audio) tagları kullanılmalı.
+     
+     let embeds= document.embeds;
