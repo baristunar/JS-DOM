@@ -91,3 +91,8 @@ JS-DOM-NOTES
       
         let res = document.baseURI;
         console.log(res);
+
+15-)document.URL : Belgenin tam url(uniform resource locator) adresi referansını elde etmek için kullanılır.
+
+       let res = document.URL;
+        console.log(res);
