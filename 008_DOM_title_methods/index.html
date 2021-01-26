@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+</head>
+
+<body>
+
+    <h1>
+        title : Belge içerisindeki title tagının referansını almak için kullanılır.
+
+
+    </h1>
+
+
+
+
+
+    <script>
+        let title = document.title;
+        console.log(title);
+
+        let p = document.createElement("p");
+        p.innerText = title;
+        let body = document.querySelector("body");
+        body.appendChild(p);
+    </script>
+
+</body>
+
+</html>
