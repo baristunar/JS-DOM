@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.activeElement()</title>
+</head>
+
+<body>
+
+    <h1>
+        document.activeElement : Belge içerisindeki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır.
+    </h1>
+
+
+    <div style="height:50px;">asdasdasdasdasdasdasdasdasdasda</div>
+
+    <p> İsim Soyisim</p>
+    <input type="text">
+
+
+    <button id="btn">Kaydet</button>
+
+
+    <script>
+        const body = document.querySelector("body");
+
+        const findActiveElement = () => {
+            let res = document.activeElement;
+            console.log(res);
+
+        }
+        const writeActiveElementName = () => {
+            let res = document.activeElement.tagName;
+            console.log(res);
+        }
+        body.addEventListener("click", findActiveElement);
+        body.addEventListener("click", writeActiveElementName);
+    </script>
+
+</body>
+
+</html>
