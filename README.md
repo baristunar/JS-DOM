@@ -98,3 +98,6 @@ JS-DOM-NOTES
         console.log(res);
 
 16-) document.domain : Belgenin domain adı referansını elde etmek için kullanılır.
+
+         let res = document.domain;
+        console.log(res);
