@@ -63,3 +63,8 @@ JS-DOM-NOTES
 
          let res = document.defaultView;
         console.log(res);
+
+12-)document.documentURI : Belge sayfasının URI(uniform resource indentifier) adresi referansının elde etmek için kullanılır.
+
+      let res = document.documentURI;
+        console.log(res); --> index.html:24 http://127.0.0.1:5500/index.html gibi.
