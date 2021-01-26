@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.readyState</title>
+</head>
+
+<body>
+
+    <h1>
+        document.readyState : Belge içeriğinin tarayıcı tarafından yüklenme durumu değeri referansını elde etmek için kullanılır.
+    </h1>
+
+
+    <div>
+        Ahmet Suhan OKa
+    </div>
+    <button onclick="ornek()">Tıkla</button>
+    <div id="resArea"></div>
+
+
+
+
+    <script>
+        const ornek = () => {
+            let res = document.readyState;
+            console.log(res);
+            const resArea = document.getElementById("resArea");
+            resArea.innerHTML = res;
+        }
+    </script>
+
+</body>
+
+</html>
