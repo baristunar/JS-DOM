@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.embeds</title>
+
+</head>
+
+<body>
+
+    <h1>
+        document.embeds :Belge içerisindeki embed veya object tagına sahip tüm elemanların referansını elde etmke için kullanılır. Embed HTML tarafında çok kullanılmamalı(img/iframe/video/audio) tagları kullanılmalı.
+    </h1>
+    <embed style="border-radius: 999px; width:200px; height:200px;" src="https://pbs.twimg.com/profile_images/974954450510139393/VABD1Fok.jpg">
+
+
+    <object data="" type=""></object>
+    <script>
+        let try2 = document.embeds;
+        console.log(try2);
+    </script>
+
+</body>
+
+</html>
