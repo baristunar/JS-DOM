@@ -8,3 +8,10 @@ JS-DOM-NOTES
       let name = document.doctype.name;
         console.log(name); --> HTML
      
+2-) document.documentElement : HTML tagının referansını element nesnesi halinde elde etmek için kullanılır.
+
+      let name = document.documentElement;
+        console.log(name);
+
+        let name2 = document.documentElement.nodeName;
+        console.log(name2); --> HTML
