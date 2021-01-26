@@ -144,3 +144,7 @@ JS-DOM-NOTES
 23-)document.links : document.links : Belge içerisindeki tüm linklerin referanslarını elde etmek için kullanılır. Referanslar birden fazla ise herbir link referansı döngü ile         elde edilebilir.
 
       let allLinks = document.links; // let allLinks = document.getElemenByTagName("a");
+
+24-) document.scripts : Belge içerisindeki script tagına sahip olan tüm elemnaların referanslarını elde etmek için kullanılır.
+
+      let scripts = document.scripts; 
