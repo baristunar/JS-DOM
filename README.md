@@ -87,3 +87,7 @@ JS-DOM-NOTES
 
         //Döküman içerisinde hareketlilik sağlamak kullanılabilir.(kaydırma istenilen yere gitme fln.)
             
+14-)document.baseURI :  Belgenin mutlak url(uniform resource locator) adresi referansını elde etmek için kullanılır.
+      
+        let res = document.baseURI;
+        console.log(res);
