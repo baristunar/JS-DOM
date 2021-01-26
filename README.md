@@ -58,3 +58,8 @@ JS-DOM-NOTES
 
         let res = document.documentMode;
         console.log(res);
+
+11-) document.defaultView : Belgenin window referansını elde etmek için kullanılır.
+
+         let res = document.defaultView;
+        console.log(res);
