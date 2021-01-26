@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>body</title>
+</head>
+
+<body>
+
+    <h1>
+        body : Belge içerisindeki body tagının referansını elde etmek için kullanılır.
+
+
+    </h1>
+
+    <button id="btn">RUN</button>
+
+
+
+    <script>
+        let body = document.body;
+        console.log(body);
+        let btn = document.getElementById("btn");
+
+        const islem = () => {
+            let res = document.body.innerHTML;
+            console.log(res);
+        }
+
+        const eventListeners = () => {
+            btn.addEventListener("click", islem);
+        }
+        eventListeners();
+    </script>
+
+</body>
+
+</html>
