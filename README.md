@@ -53,3 +53,8 @@ JS-DOM-NOTES
       
        let res = document.compatMode;
        console.log(res);
+
+10-) document.documentMode : Belgeyi oluşturmak için tarayıcı tarafından kullanılan modun referansını elde etmek için kullanılır. sadece (Internet Explorer) için geliştirilmiş           bir methodtur.
+
+        let res = document.documentMode;
+        console.log(res);
