@@ -101,3 +101,7 @@ JS-DOM-NOTES
 
          let res = document.domain;
         console.log(res);
+
+17-) document.lastModified : Belgenin en son güncelleme tarihini ve saatinin referansını elde etmek için kullanılır.
+      
+      
