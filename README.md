@@ -20,3 +20,8 @@ JS-DOM-NOTES
 
       let process = document.implementation;
       document.getElementById("res").innerHTML = process.hasFeature("HTML", "1.0");
+
+4-) document.body :  body : Belge içerisindeki body tagının referansını elde etmek için kullanılır.
+
+       let body = document.body;
+       console.log(body);
