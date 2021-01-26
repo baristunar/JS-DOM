@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.links</title>
+
+</head>
+
+<body>
+    <br>
+    <button id="islemButton" onclick="ornek1()">Click</button><br>
+    <a id="link1" href="http://www.das.com.tr">Javascript</a><br><br><br>
+    <a id="link2" href="http://www.html.com.tr">HTML</a><br><br><br>
+    <a id="link3" href="http://www.css.com.tr">CSS</a><br><br><br>
+    <a id="link4" href="http://www.php.com.tr">PHP</a><br><br><br>
+    <a id="link5" href="http://www.react.com.tr">">React</a><br><br><br>
+    <a id="link6" href="http://www.jqery.com.tr">>JQuery</a><br><br><br>
+
+    <p>a tagı sayısı: <span id="aTagCountArea ">0</span></p>
+
+    <h1>
+        document.links : Belge içerisindeki tüm linklerin referanslarını elde etmek için kullanılır. Referanslar birden fazla ise herbir link referansı döngü ile elde edilebilir.
+    </h1>
+
+
+
+
+
+    <script>
+        function ornek1() {
+            let h1 = document.createElement("h1");
+            const btn = document.querySelector("#islemButton");
+            h1.textContent = "Ahmet Suhan Oka";
+            btn.after(h1);
+            h1.style.color = `#${randomGenerator()}${randomGenerator()}${randomGenerator()}`;
+            let link = document.links[3];
+            link.style.border = "1px solid red";
+
+        }
+        const randomGenerator = () => {
+            return Math.floor(Math.random() * 15) + 1;
+        }
+        let aTagiSayisi = document.getElementById("aTagCountArea ");
+        let allATags = document.links;
+        aTagiSayisi.innerHTML = document.links.length;
+        console.log(allATags);
+
+        let link = document.links[0].href;
+
+        let islem = document.links.namedItem("link5");
+        console.log(islem);
+
+
+        /*döngü ile tüm referanları alıcam */
+
+        let allLinks = document.getElementsByTagName("a");
+        console.log(allLinks);
+        for (let i = 0; i < allLinks.length; i++) {
+            const element = allLinks[i];
+            console.log(element);
+            element.style.backgroundColor = `#${randomGenerator()}${randomGenerator()}${randomGenerator()}`;
+        }
+    </script>
+
+</body>
+
+</html>
