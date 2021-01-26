@@ -18,8 +18,15 @@
 
 
     <script>
-        let res = document.hasFocus();
-        console.log(res);
+        setInterval("ornek()", 1000);
+        const ornek = () => {
+            let islem = document.hasFocus();
+            if (document.hasFocus()) {
+                document.write("Sayfaya odaklanıldı<br>");
+            } else {
+                document.write("Sayfaya odağından çıkıldı<br>");
+            }
+        }
     </script>
 
 </body>
