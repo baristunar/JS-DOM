@@ -122,4 +122,18 @@ JS-DOM-NOTES
        let res = document.hasFocus();
         console.log(res);
 
-21-)
+21-) document.activeElement : Belge içerisindeki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır.
+
+      const body = document.querySelector("body");
+
+        const findActiveElement = () => {
+            let res = document.activeElement;
+            console.log(res);
+
+        }
+        const writeActiveElementName = () => {
+            let res = document.activeElement.tagName;
+            console.log(res);
+        }
+        body.addEventListener("click", findActiveElement);
+        body.addEventListener("click", writeActiveElementName);
