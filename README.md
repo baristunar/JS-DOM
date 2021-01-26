@@ -140,3 +140,7 @@ JS-DOM-NOTES
 
 22-) document.anchors : Bu method kaldırılmaya çalışıyor ve tavsiye edilmiyor. kullanma!
      detaylı bilgi için <a  href="https://developer.mozilla.org/en-US/docs/Web/API/Document/anchors">TIKLA</a>
+     
+23-)document.links : document.links : Belge içerisindeki tüm linklerin referanslarını elde etmek için kullanılır. Referanslar birden fazla ise herbir link referansı döngü ile         elde edilebilir.
+
+      let allLinks = document.links; // let allLinks = document.getElemenByTagName("a");
