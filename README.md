@@ -115,3 +115,8 @@ JS-DOM-NOTES
        on --> dönerse belge düzenlenebilir demek.
        off --> dönerse düzenlenemez demektir.
        inherit --> dönerse düzenlenemez. 
+
+20-)document.hasFocus() : Belge odağının olup olmadığı referansını elde etmek için kullanılır. BOOL veri tipi döner.
+
+       let res = document.hasFocus();
+        console.log(res);
