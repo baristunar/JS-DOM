@@ -69,3 +69,21 @@ JS-DOM-NOTES
       
       let res = document.documentURI;
       console.log(res); --> index.html:24 http://127.0.0.1:5500/index.html gibi.
+
+13-) document.location : document.location : Belge url(uniform resource locator) adresi referansını elde etmek için ve ayarlamak için kullanılır.
+      
+         let res = document.location;
+        console.log(res);
+
+        //// 
+        let resHref = res.href;
+        console.log(resHref);
+
+        /*ayarlam işlemi */
+        //let islem = document.location.href = "https://www.google.com.tr"; bunu açarsan google gider :D
+
+        /*mail gönderimi için */
+        //let islem2 = document.location.href = "mailto:ahmetsuhanoka0@gmail.com";
+
+        //Döküman içerisinde hareketlilik sağlamak kullanılabilir.(kaydırma istenilen yere gitme fln.)
+            
