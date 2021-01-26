@@ -109,3 +109,9 @@ JS-DOM-NOTES
          return value :
          -complete
          -loading
+         
+19-) document.designMode : Belgenin çalışma anında düzenlenebilir olup olmadığı referansını elde etmek için kullanılır.
+
+       on --> dönerse belge düzenlenebilir demek.
+       off --> dönerse düzenlenemez demektir.
+       inherit --> dönerse düzenlenemez. 
