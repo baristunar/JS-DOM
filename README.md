@@ -15,3 +15,8 @@ JS-DOM-NOTES
 
         let name2 = document.documentElement.nodeName;
         console.log(name2); --> HTML
+
+3-) implementation : Belge ile ilgili DOM implementatşon arayüzünden türetilmiş bir DOM implementation nesnesi referansını bool veri türünde elde etmek için kullanılır.
+
+      let process = document.implementation;
+      document.getElementById("res").innerHTML = process.hasFeature("HTML", "1.0");
