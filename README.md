@@ -104,4 +104,8 @@ JS-DOM-NOTES
 
 17-) document.lastModified : Belgenin en son güncelleme tarihini ve saatinin referansını elde etmek için kullanılır.
       
-      
+18-)  document.readyState : Belge içeriğinin tarayıcı tarafından yüklenme durumu değeri referansını elde etmek için kullanılır.
+
+         return value :
+         -completed
+         -loading
