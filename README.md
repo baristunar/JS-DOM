@@ -107,5 +107,5 @@ JS-DOM-NOTES
 18-)  document.readyState : Belge içeriğinin tarayıcı tarafından yüklenme durumu değeri referansını elde etmek için kullanılır.
 
          return value :
-         -completed
+         -complete
          -loading
