@@ -31,3 +31,8 @@ JS-DOM-NOTES
         let head = document.head;
         console.log(head);
       
+6-)characterSet : Belgenin karakter kodlamasının referansını elde etmek için kullanılır.
+      
+      let res = document.characterSet;
+      console.log(res);
+      
