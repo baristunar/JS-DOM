@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.scripts</title>
+
+</head>
+
+<body>
+
+    <h1>
+        document.scripts : Belge içerisindeki script tagına sahip olan tüm elemnaların referanslarını elde etmek için kullanılır.
+    </h1>
+    <script id="script1">
+        document.write("<h2>Ahmet Suhan</h2>");
+    </script>
+
+
+
+
+    <script id="script2">
+        let allScripts = document.scripts;
+        console.log(allScripts);
+
+        console.log(document.scripts.length);
+        for (let i = 0; i < allScripts.length; i++) {
+            const element = allScripts[i];
+            console.log(element.text);
+        }
+        console.log("*********************************");
+        for (let i = 0; i < allScripts.length; i++) {
+            const element = allScripts[i];
+            let a = allScripts.item(i).text
+            console.log(a);
+        }
+
+        console.log("*********************************");
+        let script2 = allScripts.namedItem("script2");
+        console.log(script2);
+    </script>
+
+</body>
+
+</html>
