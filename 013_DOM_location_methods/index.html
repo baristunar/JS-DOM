@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+</head>
+
+<body>
+    <button id="btn2"> aşağı gitt</button>
+
+    <h1>
+        document.location : Belge url(uniform resource locator) adresi referansını elde etmek için ve ayarlamak için kullanılır.
+
+
+    </h1>
+    <div style="height:2000px;">aşağı kaydır</div>
+
+
+    <button id="btn"> yukarı gitt</button>
+    <a name="down"></a>
+    <script>
+        let res = document.location;
+        console.log(res);
+
+        //// 
+        let resHref = res.href;
+        console.log(resHref);
+
+        /*ayarlam işlemi */
+        //let islem = document.location.href = "https://www.google.com.tr"; bunu açarsan google gider :D
+
+        /*mail gönderimi için */
+        //let islem2 = document.location.href = "mailto:ahmetsuhanoka0@gmail.com";
+
+
+        /*Döküman içerisinde bir hareketlilik sağlamak için */
+
+        let btn = document.querySelector("#btn");
+        let btn2 = document.querySelector("#btn2");
+
+        btn.addEventListener("click", function() {
+            document.location.href = "#top";
+
+        });
+        btn2.addEventListener("click", function() {
+            document.location.href = "#down";
+        });
+    </script>
+
+</body>
+
+</html>
