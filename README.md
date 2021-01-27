@@ -220,3 +220,20 @@ JS-DOM-NOTES
         console.log(area3.dir); --> rtl
         area3.dir = "ltr";
         console.log(area3.dir); --> ltr
+
+35-) open() : Belge içerisinden yeni bir HTML çıktı akışı açmak için kullanılır.
+
+   close() : Open metodu ile açılan HTML çıktı akışını kapatmak/sonlandırmak için kullanılır.
+   
+       Parametreler: 
+        1-) Dosyanın Mime türü
+        2-) Geçmiş aktarımı
+        
+         function ornek1() {
+
+            let islen = window.open(); // yeni sayfada açmak için
+            islem.document.open("text/html", "replace"); //geçmiş hatırlanır
+            islem.document.write("burası yeni");
+            islem.document.close();
+        }
+        
