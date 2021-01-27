@@ -204,3 +204,8 @@ JS-DOM-NOTES
       
       resultArea.addEventListener("mouseover", ornek1);
        resultArea.addEventListener("click", function(){});
+
+
+33-) removeEventListener("eventAdi",function) : Belgeye addEventListener ile eklenmiş olan event'tı silmek için kullanılır.
+
+      kaldırılacakEleman.removeEventListener("eventAdi",kaldırılacakFonksiyonAdi);
