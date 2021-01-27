@@ -192,3 +192,9 @@ JS-DOM-NOTES
         let textNode = document.createTextNode("Ahmet Suhan OKA");
         div.appendChild(textNode);
         body.appendChild(div);
+
+31-) document.createComment(): Belge içerisine yeni bir açıklama Node'u oluşturur ve oluşturduğu bu Node'u bir Node object olarak geriye döndürür.
+
+      const areaDiv = document.querySelector("#area");
+        let comment = document.createComment("Comment ekledim :)");
+        areaDiv.appendChild(comment);
