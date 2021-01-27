@@ -153,3 +153,8 @@ JS-DOM-NOTES
      kullanılmamalı(img/iframe/video/audio) tagları kullanılmalı.
      
      let embeds= document.embeds;
+
+26-) document.forms :Belge içerisindeki form tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. Eğer birden fazla ise döngü ile herbirine tek tek
+     ulaşılabilir.
+     
+      let forms = document.forms;
