@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.images</title>
+
+</head>
+
+<body>
+
+    <h1>
+        document.images :Belge içerisindeki img tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. Eğer birden fazla ise döngü ile herbirine tek tek ulaşılabilir.
+    </h1>
+
+    <img id="resim1" src="https://pbs.twimg.com/profile_images/974954450510139393/VABD1Fok_400x400.jpg" alt="resim1" width: "500px" height="500px;">
+    <img id="resim2" src="https://pbs.twimg.com/profile_images/974954450510139393/VABD1Fok_400x400.jpg" alt="resim2">
+    <img id="resim3" src="https://pbs.twimg.com/profile_images/974954450510139393/VABD1Fok_400x400.jpg" alt="resim3">
+
+
+
+    <script>
+        var imagesCollection = document.images;
+        console.log(imagesCollection);
+        console.log(imagesCollection[0]);
+        console.log(imagesCollection.item(2));
+        console.log(imagesCollection[0].alt);
+        console.log(imagesCollection[0].src);
+        console.log(imagesCollection.namedItem("resim2")); // id ile ulaştım
+        console.log(imagesCollection[0].width);
+        console.log(imagesCollection[0].height);
+    </script>
+
+</body>
+
+</html>
