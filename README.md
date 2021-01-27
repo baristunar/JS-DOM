@@ -198,3 +198,9 @@ JS-DOM-NOTES
       const areaDiv = document.querySelector("#area");
         let comment = document.createComment("Comment ekledim :)");
         areaDiv.appendChild(comment);
+        
+32-) addeventListener("eventAdi",function) : Belgeye Event Listener eklemek için kullanılır yani olay ekleriz. İşaretşlenen veya dinlenen olay belgede gerçekleştirilecek olur 
+      ise belirtilecek olan fonksiyon veya fonksiyonlar çalışır.
+      
+      resultArea.addEventListener("mouseover", ornek1);
+       resultArea.addEventListener("click", function(){});
