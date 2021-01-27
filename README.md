@@ -158,3 +158,8 @@ JS-DOM-NOTES
      ulaşılabilir.
      
       let forms = document.forms;
+      
+27-) document.images : Belge içerisindeki img tagına sahip tüm elemanların referanslarını elde etmek için kullanılır. Eğer birden fazla ise döngü ile herbirine tek tek 
+     ulaşılabilir. 
+      
+      var imagesCollection = document.images;
