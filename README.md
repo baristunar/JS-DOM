@@ -180,3 +180,15 @@ JS-DOM-NOTES
         });
         let att = document.createAttribute("style");
         att.value = "color:red;";
+
+30-) document.createElement() : Belge içerisinde yeni bir HTML Node oluşturur ve oluşturduğu bu node'u bir NOde object oalrak geri döndürür.
+
+   createTextNode() : document.createElement() methodu ile oluşturulan HTML elemanına metin nodu oluşturur ve oluşturduğu bu Node'u Node Object olarak geri döndürür.
+   
+   appendChild() : Bir nodu belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır. 
+   
+        let body = document.querySelector("body");
+        let div = document.createElement("div");
+        let textNode = document.createTextNode("Ahmet Suhan OKA");
+        div.appendChild(textNode);
+        body.appendChild(div);
