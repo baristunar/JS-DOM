@@ -209,3 +209,14 @@ JS-DOM-NOTES
 33-) removeEventListener("eventAdi",function) : Belgeye addEventListener ile eklenmiş olan event'tı silmek için kullanılır.
 
       kaldırılacakEleman.removeEventListener("eventAdi",kaldırılacakFonksiyonAdi);
+      
+34-) dir : Belge içerisindeki metinlerin yazılış yönü referansını elde etmek için kullanılır. Ayrıca Belge içerisindeki metinlerin yazılış yönünün atamasını ayarlamak için de
+     kullanılır.
+     
+        1-)ltr --> left to right
+        2-)rtl --> right to left
+     
+        let area3 = document.getElementById("area3")
+        console.log(area3.dir); --> rtl
+        area3.dir = "ltr";
+        console.log(area3.dir); --> ltr
