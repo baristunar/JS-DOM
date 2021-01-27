@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventListener()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        addeventListener("eventAdi",function) : Belgeye Event Listener eklemek için kullanılır yani olay ekleriz. İşaretşlenen veya dinlenen olay belgede gerçekleştirilecek olur ise belirtilecek olan fonksiyon veya fonksiyonlar çalışır.
+
+    </h1>
+
+
+    <div style="width:500px; height:500px; border:1px solid;" id="resultArea">
+
+    </div>
+
+    <button id="btn1">Temizle</button>
+    <button id="btn2">Temizle2</button>
+
+
+
+    <script>
+        const btn = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+
+        const resultArea = document.querySelector("#resultArea");
+        const ornek1 = () => {
+
+            let div = document.createElement("div");
+            let text = document.createTextNode("mouseover oldu :)");
+            div.appendChild(text);
+            resultArea.appendChild(div);
+        }
+
+        const ornek2 = () => {
+            resultArea.removeChild(resultArea.lastChild);
+        }
+        const ornek3 = () => {
+                let div = document.createElement("div");
+                let text = document.createTextNode("click oldu :)");
+                div.appendChild(text);
+                resultArea.appendChild(div);
+            }
+            //document.addEventListener("click", ornek1, ornek2, ornek3); // this not proper using
+
+        function a(event) {
+            console.log(event);
+            console.log(event.target);
+            console.log(resultArea.childNodes);
+            resultArea.innerHTML = "";
+        }
+        const a2 = (event) => {
+            console.log(event);
+            console.log(event.target);
+            console.log(resultArea.childNodes);
+            resultArea.innerHTML = "";
+        }
+        resultArea.addEventListener("mouseover", ornek1);
+        resultArea.addEventListener("mouseleave", ornek2);
+        resultArea.addEventListener("click", ornek3);
+        btn.addEventListener("click", a);
+        btn2.addEventListener("click", a2);
+    </script>
+
+</body>
+
+</html>

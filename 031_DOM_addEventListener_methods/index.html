@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventListener()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        addeventListener("eventAdi",function) : Belgeye Event Listener eklemek için kullanılır yani olay ekleriz. İşaretşlenen veya dinlenen olay belgede gerçekleştirilecek olur ise belirtilecek olan fonksiyon veya fonksiyonlar çalışır.
+
+    </h1>
+
+
+    <div id="area">
+
+    </div>
+
+
+
+
+    <script>
+        const ornek1 = () => {
+            console.log("Click Ornek1");
+        }
+        const ornek2 = () => {
+            console.log("Click Ornek2");
+        }
+        const ornek3 = () => {
+                console.log("Click Ornek2");
+            }
+            //document.addEventListener("click", ornek1, ornek2, ornek3); // this not proper using
+
+        document.addEventListener("click", ornek1);
+        document.addEventListener("click", ornek2);
+        document.addEventListener("click", ornek3);
+    </script>
+
+</body>
+
+</html>
