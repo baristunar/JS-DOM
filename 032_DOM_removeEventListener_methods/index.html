@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeEventListener()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        removeEventListener("eventAdi",function) : Belgeye addEventListener ile eklenmiş olan event'tı silmek için kullanılır.
+    </h1>
+
+
+    <div id="area">
+
+    </div>
+    <button id="btn1">
+Event Ekle
+</button>
+    <button id="btn2">Event Sil</button>
+
+
+
+    <script>
+        const area = document.getElementById("area");
+        const btn1 = document.querySelector("#btn1");
+        const btn2 = document.querySelector("#btn2");
+        let interval;
+
+        let div = document.createElement("div");
+        let text = document.createTextNode("Saniyede bir ekle");
+        div.appendChild(text);
+
+
+        function ornek1() {
+
+            interval = setInterval(function() {
+                let a = document.createTextNode("asda");
+                let p = document.createElement("p");
+                p.appendChild(a);
+                document.getElementById("area").appendChild(p);
+            }, 1000);
+        }
+
+
+
+        btn1.addEventListener("click", ornek1);
+
+        btn2.addEventListener("click", function() {
+            clearInterval(interval);
+            btn1.removeEventListener("click", ornek1);
+        });
+    </script>
+
+</body>
+
+</html>
