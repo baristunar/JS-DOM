@@ -167,3 +167,16 @@ JS-DOM-NOTES
 28-)navigator.plugins : Tarayıcıdaki tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eklenti döngü ile elde edilebilir.
       
       let pluginsColletion = navigator.plugins;
+
+29-) document.createAttribute() : Belge içerisinde istenilen elemena yeni bir nitelik Node u oluşturuyor ve bu oluşturduğu Nodu Node Object olarak geri dönüyor. 
+
+   document.setAttributeNode : createAttribute() metodu ile oluşturulan özellik nodunu node nesnesine uygular.
+   
+    //butone tıklandığında seçilen h1 tagının color:red olacak :)
+      const header1 = document.getElementById("header1");
+        const button = document.getElementById("button1");
+        button.addEventListener("click", function() {
+            header1.setAttributeNode(att);
+        });
+        let att = document.createAttribute("style");
+        att.value = "color:red;";
