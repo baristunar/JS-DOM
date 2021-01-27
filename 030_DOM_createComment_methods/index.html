@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.createComment()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        document.createComment(): Belge içerisine yeni bir açıklama Node'u oluşturur ve oluşturduğu bu Node'u bir Node object olarak geriye döndürür.
+
+    </h1>
+
+
+    <div id="area">
+
+    </div>
+
+
+
+
+    <script>
+        const areaDiv = document.querySelector("#area");
+        let comment = document.createComment("Comment ekledim :)");
+        areaDiv.appendChild(comment);
+    </script>
+
+</body>
+
+</html>
