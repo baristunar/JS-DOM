@@ -163,3 +163,7 @@ JS-DOM-NOTES
      ulaşılabilir. 
       
       var imagesCollection = document.images;
+
+28-)navigator.plugins : Tarayıcıdaki tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eklenti döngü ile elde edilebilir.
+      
+      let pluginsColletion = navigator.plugins;
