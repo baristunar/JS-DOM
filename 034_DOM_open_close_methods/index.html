@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open() and close()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        open() : Belge içerisinden yeni bir HTML çıktı akışı açmak için kullanılır.
+        <br> close() : Open metodu ile açılan HTML çıktı akışını kapatmak/sonlandırmak için kullanılır.
+
+        <br> Parametreler: 1-) Dosyanın Mime türü <br> 2-) Geçmiş aktarımı
+
+
+    </h1>
+
+
+
+
+    <button onclick="ornek1()">Html akışını aç </button>
+
+
+
+    <script>
+        function ornek1() {
+
+            let islen = window.open();
+            islem.document.open("text/html", "replace"); //geçmiş hatırlanır
+            islem.document.write("burası yeni");
+            islem.document.close();
+        }
+    </script>
+
+</body>
+
+</html>
