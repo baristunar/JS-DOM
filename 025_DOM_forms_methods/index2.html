@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.forms</title>
+</head>
+
+<body>
+
+    <form id="form1" name="nameForm1" action="http://www.extraegitim.com?sonuc.php" target="_blank" method="post" accept-charset="UTF-8" autocomplete="on" enctype="multipart/form-data" novalidate>
+
+        Adı Soyadı : <input type="text" id="text1" name="nameText1" value="Ahmet Suhan Oka"> Şehir : <input type="text" id="city1" name="nameCity1" value="Istanbul">
+        <input type="submit" value="Gönder">
+        <br><br><br>
+        <div id="resArea">
+
+        </div>
+
+
+    </form>
+
+    <script>
+        const resArea = document.getElementById("resArea");
+        let form = document.forms[0];
+        let gonderilecekler = {
+            action: "<br> form action: " + form.action,
+            target: "<br> form target: " + form.target,
+            id: " <br> form id:" + form.id,
+            name: "<br> form name:  " + form.name,
+            method: " <br> form method: " + form.method,
+            autoComplete: "<br> form autocomplete: " + form.autocomplete,
+            enctype: " <br> form enctype: " + form.enctype
+        }
+        resArea.innerHTML = gonderilecekler.action + gonderilecekler.target + gonderilecekler.id + gonderilecekler.name + gonderilecekler.name + gonderilecekler.name + gonderilecekler.method + gonderilecekler.autoComplete + gonderilecekler.enctype;
+    </script>
+</body>
+
+</html>
