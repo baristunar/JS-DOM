@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.createElement() and createTextNode()</title>
+
+</head>
+
+<body>
+
+    <h1>
+        document.createElement() : Belge içerisinde yeni bir HTML Node oluşturur ve oluşturduğu bu node'u bir NOde object oalrak geri döndürür.
+        <br>createTextNode() : document.createElement() methodu ile oluşturulan HTML elemanına metin nodu oluşturur ve oluşturduğu bu Node'u Node Object olarak geri döndürür.
+        <br> appendChild() : Bir nodu belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır.
+    </h1>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="area">
+
+    </div>
+
+    <button id="btn">Ekle</button>
+
+
+    <script>
+        let body = document.querySelector("body");
+        let div = document.createElement("div");
+        let textNode = document.createTextNode("JS ASO C C#");
+        div.appendChild(textNode);
+        let area = document.getElementById("area");
+        area.style.border = "1px solid red";
+        area.appendChild(div);
+
+
+        const ekle = () => {
+            let div = document.createElement("div");
+            let textNode = document.createTextNode("Eklendim :)");
+            div.appendChild(textNode);
+            document.querySelector("#area").appendChild(div);
+        }
+        const btn = document.querySelector("#btn");
+        btn.addEventListener("click", ekle);
+    </script>
+
+</body>
+
+</html>
