@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigator.plugins</title>
+
+</head>
+
+<body>
+
+    <h1>
+        navigator.plugins : Tarayıcıdaki tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eklenti döngü ile elde edilebilir.
+    </h1>
+
+
+
+
+
+    <script>
+        let value = navigator.plugins;
+        console.log(value);
+        console.log(value.length);
+        console.log(value.item(1));
+        console.log(value.item(1).description);
+        console.log(value.item(1).filename);
+        console.log(value.item(1).name);
+        console.log(value['Chromium PDF Viewer']);
+    </script>
+
+</body>
+
+</html>
