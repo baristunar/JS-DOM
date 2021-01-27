@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dir</title>
+
+</head>
+
+<body>
+
+    <h1>
+        dir : Belge içerisindeki metinlerin yazılış yönü referansını elde etmek için kullanılır. Ayrıca Belge içerisindeki metinlerin yazılış yönünün atamasını ayarlamak için de kullanılır.
+
+        <br> 1-)ltr --> left to right
+        <br> 2-)rtl --> right to left
+
+    </h1>
+
+
+    <div dir="ltr" id="area1">
+        Javascript Öğren
+    </div>
+
+    <div dir="rtl" id="area2">
+        Javascript Öğren asdasd
+    </div>
+
+    <div dir="rtl" id="area3">
+        Javascript Öğren asdasd
+    </div>
+
+
+
+    <script>
+        let area3 = document.getElementById("area3")
+        console.log(area3.dir);
+        area3.dir = "ltr";
+        console.log(area3.dir);
+    </script>
+
+</body>
+
+</html>
