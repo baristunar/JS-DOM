@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        * {
+            padding: 0;
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        document.styleSheets :Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Eğer stil sayfası referansları birden fazla ise her style sayfası referansı döngü ile elde edilebilir.
+
+
+
+
+    </h1>
+
+    <script>
+        let styleSheets = document.styleSheets;
+        console.log(styleSheets);
+        console.log(styleSheets.length);
+
+        for (const i of styleSheets) {
+            console.log(i);
+            console.log(i.media);
+            console.log(i.ownerNode);
+            console.log(i.ownerRule);
+            console.log(i.parentStyleSheet);
+        }
+        console.log("*******************************");
+
+        console.log(styleSheets.item(0));
+        console.log(styleSheets.item(0).type);
+        console.log(styleSheets.item(0).title);
+        console.log(styleSheets.item(0).rules);
+        console.log(styleSheets.item(0).cssRules);
+        styleSheets.item(0).addRule();
+    </script>
+</body>
+
+</html>

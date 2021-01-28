@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.styleSheets</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        document.styleSheets :Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Eğer stil sayfası referansları birden fazla ise her style sayfası referansı döngü ile elde edilebilir.
+
+
+
+
+    </h1>
+
+
+
+
+
+    <script>
+        let styleSheets = document.styleSheets;
+        console.log(styleSheets);
+        for (const i of styleSheets) {
+            console.log(i);
+            console.log(i.media);
+
+        }
+        console.log("*******************************");
+    </script>
+
+</body>
+
+</html>
