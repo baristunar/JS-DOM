@@ -241,3 +241,5 @@ JS-DOM-NOTES
      style sayfası referansı döngü ile elde edilebilir.
      
       let styleSheets = document.styleSheets;
+
+37-)document.adoptNode() : 
