@@ -237,3 +237,7 @@ JS-DOM-NOTES
             islem.document.close();
         }
         
+36-) document.styleSheets :Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Eğer stil sayfası referansları birden fazla ise her
+     style sayfası referansı döngü ile elde edilebilir.
+     
+      let styleSheets = document.styleSheets;
