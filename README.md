@@ -242,4 +242,10 @@ JS-DOM-NOTES
      
       let styleSheets = document.styleSheets;
 
-37-)document.adoptNode() : 
+37-) document.adoptNode() : Belge içerisine başka bir belgeden node eklemek için kullanılır. Ekelenecek olan Node un varsa tüm alt node'larıda işleme dahil edilerek ilgili tüm
+      nodlar diğer belgeden kaldırılır. 
+
+38-)
+     
+   
+      
