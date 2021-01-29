@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.importNode()</title>
+
+
+
+
+</head>
+
+<body>
+    <h1>
+        document.importNode() : Belge içerisine başka bir belgeden node eklemek için kullanılır. Eklenecek olan node un varsa tüm alt node ları da eklenir.
+
+
+    </h1>
+
+    <br><br><br>
+    <iframe src="index2.html" style="width: 500px; height:500px;" frameborder="1"></iframe>
+<br><br><br><br><br>
+ 
+
+<button onClick="ornek">Test</button>
+<br><br><br><br>
+
+
+    <script>
+        const ornek =()=>{
+            let cerceve = document.getElementsByTagName("iframe")[0];
+            let alan = cerceve.contentWindow.document.getElementsByTagName("div")[0];
+            var sonuc = document.adoptNode(alan,true);
+            document.body.appendChild(sonuc);
+        }
+    </script>
+
+</body>
+
+</html>
