@@ -249,7 +249,16 @@ JS-DOM-NOTES
 
 39-) document.normalize() : Belge içerisindeki boş text node larını kaldırarak bitişik düğüme katılmasını sağlar.
 
-40-) 
+40-) document.cookie : 
+
+       Cookie Yapısı :
+        1-)Çerez ADI : 
+        2-):erez değeri: 
+        3-)Ceçer yaşam süresi
+        4-)Path
+        cookie adı = Cookie değeri; Cooki yaşam süresi ; Path
+
+41-)
      
    
       
