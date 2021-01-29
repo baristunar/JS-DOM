@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> document.normalize()</title>
+
+
+
+
+</head>
+
+<body onload="NodeCount()">
+    <h1>
+        document.normalize() : Belge içerisindeki boş text node larını kaldırarak bitişik düğüme katılmasını sağlar.
+
+
+    </h1>
+
+    <button id="btn1" onclick="NodeCount">Node Sayısı</button>
+    <button id="btn2" onclick="CreateNode2">Node Ekle</button>
+    <br><br><br><br><br>
+    <div  id="countArea"></div>
+
+
+    <script>
+
+
+function CreateNode2(){
+    var islem = document.createTextNode("new Node");
+    var sonuc = document.body;
+    sonuc.appendChild(islem);
+    var islem2 = document.getElementById("countArea");
+    islem2.innerHTML = sonuc.childNodes.length;
+}
+
+function NodeCount(){
+     
+      document.normalize();
+        var islem = document.body;
+        var sonuc =document.getElementById("countArea"); 
+        sonuc.innerHTML =islem.childNodes.length;
+   }
+        let button = document.getElementById("btn1");
+        let button2 = document.getElementById("btn2");
+
+        
+  
+const eventListener=()=>{
+    button.addEventListener("click",NodeCount);
+    button2.addEventListener("click",CreateNode2);
+
+}
+eventListener();
+    </script>
+
+</body>
+
+</html>
