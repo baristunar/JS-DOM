@@ -245,7 +245,9 @@ JS-DOM-NOTES
 37-) document.adoptNode() : Belge içerisine başka bir belgeden node eklemek için kullanılır. Ekelenecek olan Node un varsa tüm alt node'larıda işleme dahil edilerek ilgili tüm
       nodlar diğer belgeden kaldırılır. 
 
-38-)
+38-) document.importNode() : Belge içerisine başka bir belgeden node eklemek için kullanılır. Eklenecek olan node un varsa tüm alt node ları da eklenir.
+
+39-)
      
    
       
