@@ -258,7 +258,7 @@ JS-DOM-NOTES
         4-)Path
         cookie adı = Cookie değeri; Cooki yaşam süresi ; Path
 
-41-)
+41-) lenght : 
      
    
       
