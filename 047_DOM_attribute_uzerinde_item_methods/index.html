@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes.item()</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes.item() : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node unun referansını elde etmek için veya ayarlamak için kullanılır. Eğer attribute sayısı birden fazla ise döngü ile ulaşılabilir. 
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+<div id="asd2" class="container2" style="color:yellow;" ></div>
+
+
+    <script>
+
+
+let div1 = document.getElementById("asd");
+let div2 = document.getElementById("asd2");
+
+console.log(div1.attributes.item("div"));
+console.log(div1.attributes.item(1));
+for( let i = 0 ; i<div2.attributes.length;i++){
+console.log(div2.attributes.item(i));
+}
+
+
+
+    </script>
+</body>
+</html>
