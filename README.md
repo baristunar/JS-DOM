@@ -305,6 +305,15 @@ JS-DOM-NOTES
       asdDiv.setAttribute("class","Ahmet");
       console.log(asdDiv.attributes.getNamedItem("class")); --> Ahmet oldu
       
+      /*dassssssssssssssssssssssssssssss*/
+
+      let newAttribute =document.createAttribute("style");
+      newAttribute.value = "color:blue";
+      let asdDiv2 = document.getElementById("asd2");
+      asdDiv2.attributes.setNamedItem(newAttribute);
+      console.log(asdDiv2);
+
+      
 
 47-)
 
