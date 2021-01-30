@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes[index].specified</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes[index].specified : Belge içerisindeki HTML elemanına Her hangi bir attribute nin klenip eklenmediğini referansını bool veri türünde elde etmek için  kullanılır.
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+
+    <script>
+let asdDiv = document.getElementById("asd");
+console.log(asdDiv.attributes[0].specified);
+console.log(asdDiv.attributes.item(1).specified);
+let res = asdDiv.getAttributeNode("id").specified;
+console.log(res);
+let res2 = asdDiv.getAttributeNode("class").specified;
+console.log(res2);
+
+
+    </script>
+</body>
+</html>
