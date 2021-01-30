@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> length()</title>
+
+
+
+
+</head>
+
+<body >
+    <h1>
+       length() : Belge içerisindeki HTML elemanına eklenmiş olan attribute lerin sayısını elde etmek için kullanılır.
+    </h1>
+
+       
+
+<div id="asd" class="naber" style="color:red;">
+asd
+</div>
+<p id="textArea">Buraya divin attribute sayısı yazılacak</p>
+
+
+
+    <script>
+const asdDiv = document.getElementById("asd");
+const p = document.getElementById("textArea");
+let asdDivAttributeLength = asdDiv.attributes.length;
+p.innerHTML=asdDivAttributeLength;
+
+
+      
+    </script>
+
+</body>
+
+</html>
