@@ -297,7 +297,17 @@ JS-DOM-NOTES
       console.log(asdDiv.attributes.getNamedItem("id"));
 
 
-46-) 
+46-)  attributes.setNamedItem("setEdilecekAttr","setValue") : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node u referansını elde etmek için kullanılır.
+
+      let asdDiv = document.getElementById("asd");
+      let asdDivClassAttrName = asdDiv.attributes.getNamedItem("class");
+      console.log(asdDivClassAttrName); --> ilkte container dı aşağıdaki işlemi yapınca Ahmet oldu
+      asdDiv.setAttribute("class","Ahmet");
+      console.log(asdDiv.attributes.getNamedItem("class")); --> Ahmet oldu
+      
+
+47-)
+
      
    
       
