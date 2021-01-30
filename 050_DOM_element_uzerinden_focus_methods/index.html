@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus</title>
+</head>
+<body>
+    
+
+    <h1>
+        focus : Belge içerisindeki herhangi bir HTML elemanına odaklanmak için kullanılır.
+
+    </h1>
+
+    <button onclick="ornek">Odaklan</button><br><br>
+    <a id="link1" href="https://www.google.com.tr" target="_blank" contenteditable="true" >Go to Google</a>
+
+    <script>
+         var a = document.getElementById("link1");
+         a.focus();  
+function ornek(){
+    a.focus(true);
+}
+
+
+    </script>
+</body>
+</html>
