@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+</head>
+<body>
+    
+
+    <h1>
+        accesskey : Belge içerisindeki herhangi bir HTML elemanına atanmış olan accessKey değerini elde etmek veya ayarlamak için kullanılır.
+
+    </h1>
+<p>alt+1 --> google a git </p>
+<p>alt+2--> yandex e git </p>
+
+<a id="a1" href="https://www.google.com" target="_blank" accesskey="1">Google a git</a><span id="bir"></span> <br>
+<a id="a2" href="https://www.yandex.com" target="_blank" accesskey="2">Google a git</a><span id="iki"></span>
+
+
+
+    <script>
+
+let a1 = document.getElementById("a1");
+let a2 = document.getElementById("a2");
+let a1AccessKey= a1.accessKey;
+let a2AccessKey= a1.accessKey;
+let spanBir = document.getElementById("bir");
+let spanIki = document.getElementById("iki");
+spanBir.innerHTML =  "    "+a1AccessKey;
+spanIki.innerHTML = "    "+a2AccessKey;
+
+/* AccessKey atama */
+
+a1.accessKey ="5";
+console.log(a1.accessKey);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
