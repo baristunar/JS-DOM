@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blur</title>
+</head>
+<body>
+    
+
+    <h1>
+        blur = belge içerisinde odaklanılmış herhangi bir HTML elemanının odağından çıkmak için kullanılır.
+
+    </h1>
+
+    <button onclick="bir()">Odaklan</button><br><br>
+    <button onclick="iki()">Odaktan çık</button><br><br>
+
+   <input id="baglanti" type="text">
+   <div id="baglanti2" contenteditable="true">asdasdad</div>
+
+    <script>
+
+function bir(){
+document.getElementById("baglanti").focus();
+document.getElementById("baglanti2").focus();
+
+console.log("odaklandım");
+}
+function iki(){
+    document.getElementById("baglanti").blur();
+    document.getElementById("baglanti2").blur();
+
+console.log("odaktan çıktım");
+
+
+}
+
+    </script>
+</body>
+</html>
