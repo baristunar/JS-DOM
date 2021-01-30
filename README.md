@@ -271,7 +271,15 @@ JS-DOM-NOTES
             console.log(asdDiv.getAttributeNames());
             
 
-43-)
+43-) attributes[index].value : Belge içerisindeki HTML elemanına eklenmiş olan attribute değerinin referansını elde etmek için kullanılır. HTML elemenanı içerisindeki attribute 
+      sayısı birden fazl ise her bir attribute değeri döngü ile elde edilebilir.
+      
+          let asdDiv = document.getElementById("asd");
+            for(let i = 0 ; i< asdDiv.attributes.length; i++){
+                console.log(asdDiv.attributes[i].value);
+            }  
+
+44-)
      
    
       
