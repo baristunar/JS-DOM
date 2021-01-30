@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+</head>
+<body>
+    
+
+    <h1>
+        style : Belge içerisindeki HTML elemanına veya elemanlarına CSS (Cascading Style Sheets) özellikleri ve değerleri eklemen veya referansını elde etmek içi kullanılır.
+
+    </h1>
+
+<div id="asd" class="container" style="background-color:red; width:50px;height:50px;" ></div>
+<div id="asd2" class="container2" style="background-color:yellow; width:50px;height:50px;" ></div>
+
+
+    <script>
+
+let div1 = document.getElementById("asd");
+console.log(div1.style);
+console.log(div1.style[0]);
+console.log(div1.style.item(2));
+for(let i = 0 ; i< div1.style.length; i++){
+    console.log(div1.style[i]);
+    console.log(div1.style.item(i));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
