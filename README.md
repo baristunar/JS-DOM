@@ -258,7 +258,11 @@ JS-DOM-NOTES
         4-)Path
         cookie adı = Cookie değeri; Cooki yaşam süresi ; Path
 
-41-) lenght : 
+41-) Atribute üzeinde --> lenght() : Belge içerisindeki HTML elemanına eklenmiş olan attribute lerin sayısını elde etmek için kullanılır.
+      
+      let asdDivAttributeLength = asdDiv.attributes.length;
+
+42-)
      
    
       
