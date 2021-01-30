@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> getAttributeNames()</title>
+
+
+
+
+</head>
+
+<body >
+    <h1>
+        getAttributeNames : Belge içerisindeki HTML elemanına eklenmiş olan attribute adı referansını elde etmek için kullanılır. HTML elemanı içerisindek, çzellik sayısı birden fazla ise her bir özellik adı referansı döngü ile elde edilebilir.
+    </h1>
+
+       
+
+<div id="asd" class="naber" style="color:red;">
+asd
+</div>
+
+
+
+    <script>
+const asdDiv = document.getElementById("asd");
+let asdDivAttrName = asdDiv.attributes[0].name;
+for(let i = 0 ; i<asdDiv.attributes.length;i++){
+    console.log(asdDiv.attributes[0].name);
+}
+console.log(asdDivAttrName);
+console.log(asdDiv.getAttributeNames());
+
+
+
+      
+    </script>
+
+</body>
+
+</html>
