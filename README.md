@@ -315,7 +315,21 @@ JS-DOM-NOTES
 
       
 
-47-)
+47-)    attributes.removeNamedItem("silinecekAttr") : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node unu kaldırmayı sağlıyor. 
+
+            let div1 = document.querySelector("#asd");
+            let div2 = document.querySelector("#asd2");
+            let a =(div1.attributes.getNamedItem("style"));
+            console.log(a);
+            div1.attributes.removeNamedItem("style");
+            console.log(div1.hasAttribute("style"));
+            
+
+48-)
+
+
+      
+   
 
      
    
