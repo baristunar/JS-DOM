@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes.removeNamedItem()</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes.removeNamedItem() : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node unu kaldırmayı sağlıyor.
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+<div id="asd2" class="container2" style="color:yellow;" ></div>
+
+
+    <script>
+let div1 = document.querySelector("#asd");
+let div2 = document.querySelector("#asd2");
+let a =(div1.attributes.getNamedItem("style"));
+console.log(a);
+div1.attributes.removeNamedItem("style");
+console.log(div1.hasAttribute("style"));
+
+
+
+
+    </script>
+</body>
+</html>
