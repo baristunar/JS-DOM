@@ -262,7 +262,16 @@ JS-DOM-NOTES
       
       let asdDivAttributeLength = asdDiv.attributes.length;
 
-42-)
+42-) attributes[index].name : Belge içerisindeki HTML elemanına eklenmiş olan attribute adı referansını elde etmek için kullanılır. HTML elemanı içerisindek, çzellik sayısı birden fazla ise her
+      bir özellik adı referansı döngü ile elde edilebilir.
+      
+            const asdDiv = document.getElementById("asd");
+            let asdDivAttrName = asdDiv.attributes[0].name;
+            console.log(asdDivAttrName);
+            console.log(asdDiv.getAttributeNames());
+            
+
+43-)
      
    
       
