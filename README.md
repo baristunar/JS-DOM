@@ -372,7 +372,12 @@ JS-DOM-NOTES
          a.focus(); 
       
  
- 52-)
+ 52-)  blur() : belge içerisinde odaklanılmış herhangi bir HTML elemanının odağından çıkmak için kullanılır.
+ 
+      document.getElementById("baglanti2").blur();
+ 
+ 53-)
+ 
    
 
       
