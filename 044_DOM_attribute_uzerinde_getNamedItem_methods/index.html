@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes[index].getNamedItem()</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes.getNamedItem() : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node u referansını elde etmek için kullanılır.
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+
+    <script>
+let asdDiv = document.getElementById("asd");
+console.log(asdDiv.attributes.getNamedItem("class"));
+console.log(asdDiv.attributes.getNamedItem("id"));
+
+
+
+    </script>
+</body>
+</html>
