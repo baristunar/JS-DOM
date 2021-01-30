@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes.setNamedItem()</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes.setNamedItem("setEdilecekAttr","setValue") : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node u referansını elde etmek için kullanılır.
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+<div id="asd2" class="container2" style="color:red;" ></div>
+
+
+    <script>
+let asdDiv = document.getElementById("asd");
+let asdDivClassAttrName = asdDiv.attributes.getNamedItem("class");
+console.log(asdDivClassAttrName);
+asdDiv.setAttribute("class","Ahmet");
+console.log(asdDiv.attributes.getNamedItem("class"));
+
+
+/*dassssssssssssssssssssssssssssss*/
+
+let newAttribute =document.createAttribute("style");
+newAttribute.value = "color:blue";
+let asdDiv2 = document.getElementById("asd2");
+asdDiv2.attributes.setNamedItem(newAttribute);
+console.log(asdDiv2);
+
+
+    </script>
+</body>
+</html>
