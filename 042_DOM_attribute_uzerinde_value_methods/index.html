@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes[index].value</title>
+</head>
+<body>
+    
+
+    <h1>
+        attributes[index].value : Belge içerisindeki HTML elemanına eklenmiş olan attribute değerinin referansını elde etmek için kullanılır. HTML elemenanı içerisindeki attribute sayısı birden fazl ise her bir attribute değeri döngü ile elde edilebilir.
+
+    </h1>
+
+<div id="asd" class="container" style="color:red;" ></div>
+
+    <script>
+let asdDiv = document.getElementById("asd");
+for(let i = 0 ; i< asdDiv.attributes.length; i++){
+    console.log(asdDiv.attributes[i].value);
+}
+
+    </script>
+</body>
+</html>
