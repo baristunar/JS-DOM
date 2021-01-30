@@ -338,7 +338,18 @@ JS-DOM-NOTES
       }
  
  
- 49-) 
+ 49-) style : Belge içerisindeki HTML elemanına veya elemanlarına CSS (Cascading Style Sheets) özellikleri ve değerleri eklemen veya referansını elde etmek içi kullanılır.
+ 
+      let div1 = document.getElementById("asd");
+      console.log(div1.style);
+      console.log(div1.style[0]);
+      console.log(div1.style.item(2));
+      for(let i = 0 ; i< div1.style.length; i++){
+          console.log(div1.style[i]);
+          console.log(div1.style.item(i));
+            }
+ 
+ 50-)
    
 
       
