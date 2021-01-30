@@ -289,7 +289,15 @@ JS-DOM-NOTES
             let res2 = asdDiv.getAttributeNode("class").specified;
             console.log(res2);
 
-45-)
+45-)  attributes.getNamedItem() : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node u referansını elde etmek için kullanılır.
+
+      <div id="asd" class="container" style="color:red;" ></div>
+      let asdDiv = document.getElementById("asd");
+      console.log(asdDiv.attributes.getNamedItem("class"));
+      console.log(asdDiv.attributes.getNamedItem("id"));
+
+
+46-) 
      
    
       
