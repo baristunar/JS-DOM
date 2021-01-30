@@ -349,7 +349,24 @@ JS-DOM-NOTES
           console.log(div1.style.item(i));
             }
  
- 50-)
+ 50-) accesskey : Belge içerisindeki herhangi bir HTML elemanına atanmış olan accessKey değerini elde etmek veya ayarlamak için kullanılır.
+      
+      let a1 = document.getElementById("a1");
+      let a2 = document.getElementById("a2");
+      let a1AccessKey= a1.accessKey;
+      let a2AccessKey= a1.accessKey;
+      let spanBir = document.getElementById("bir");
+      let spanIki = document.getElementById("iki");
+      spanBir.innerHTML =  "    "+a1AccessKey;
+      spanIki.innerHTML = "    "+a2AccessKey;
+
+      /* AccessKey atama */
+
+      a1.accessKey ="5";
+      console.log(a1.accessKey);
+
+ 
+ 51-)
    
 
       
