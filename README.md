@@ -366,7 +366,13 @@ JS-DOM-NOTES
       console.log(a1.accessKey);
 
  
- 51-)
+ 51-) focus : Belge içerisindeki herhangi bir HTML elemanına odaklanmak için kullanılır.
+ 
+      var a = document.getElementById("link1");
+         a.focus(); 
+      
+ 
+ 52-)
    
 
       
