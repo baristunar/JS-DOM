@@ -279,7 +279,17 @@ JS-DOM-NOTES
                 console.log(asdDiv.attributes[i].value);
             }  
 
-44-)
+44-)  attributes[index].specified : Belge içerisindeki HTML elemanına Her hangi bir attribute nin klenip eklenmediğini referansını bool veri türünde elde etmek için  kullanılır.
+
+            let asdDiv = document.getElementById("asd");
+            console.log(asdDiv.attributes[0].specified);
+            console.log(asdDiv.attributes.item(1).specified);
+            let res = asdDiv.getAttributeNode("id").specified;
+            console.log(res);
+            let res2 = asdDiv.getAttributeNode("class").specified;
+            console.log(res2);
+
+45-)
      
    
       
