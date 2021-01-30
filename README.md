@@ -325,8 +325,21 @@ JS-DOM-NOTES
             console.log(div1.hasAttribute("style"));
             
 
-48-)
+48-) attributes.item() : Belge içerisindeki HTML elemanına eklenmiş olan attribute Node unun referansını elde etmek için veya ayarlamak için kullanılır. Eğer attribute sayısı
+      birden fazla ise döngü ile ulaşılabilir. 
+      
+      let div1 = document.getElementById("asd");
+      let div2 = document.getElementById("asd2");
 
+      console.log(div1.attributes.item("div"));
+      console.log(div1.attributes.item(1));
+      for( let i = 0 ; i<div2.attributes.length;i++){
+      console.log(div2.attributes.item(i));
+      }
+ 
+ 
+ 49-) 
+   
 
       
    
