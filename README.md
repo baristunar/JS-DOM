@@ -376,7 +376,17 @@ JS-DOM-NOTES
  
       document.getElementById("baglanti2").blur();
  
- 53-)
+ 53-)  classList = belge içerisindeki herhangi bir HTML elemanına atanmış olan class listesi isimlerini elde etmek veya ayarlamak için kullanılır.
+      
+       item : class adını döndürür
+        length : class sayısını döner
+        add : class adı ekler
+        remove : class adı kaldırır
+        toggle : class adı ekler/kaldırır
+        contains : class adı arar
+      
+ 
+ 54-)
  
    
 
