@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>className</title>
+
+    <style>
+        .bir{
+            color:red;
+        }
+        .iki{
+           padding: 10px;
+           background-color: red;
+           color:#fff;
+            
+        }
+        .uc{
+            margin:0 auto;
+
+            
+        
+        }
+        .dort{
+            border:1px solid rgba(0, 0, 0, .5);
+        }
+        .bes{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>
+        className = belge içerisindeki herhangi bir HTML elemanına atanmış olan class  isimlerini elde etmek veya ayarlamak için kullanılır. 
+    </h1>
+
+
+<button onclick="classNameChange()">classNameChange</button>
+
+<div id="sonucAlani" class="bir">Js Öğreniyorum</div>
+    <script>
+
+let sonucAlaniDiv= document.getElementById("sonucAlani");
+
+console.log(sonucAlaniDiv.className);
+
+let counter= 0;
+function classNameChange(){
+    counter++;
+    if(counter%2!=0)
+         sonucAlaniDiv.className="iki";
+    else 
+        sonucAlaniDiv.className="bir";
+}
+
+    </script>
+</body>
+</html>
