@@ -423,6 +423,7 @@ JS-DOM-NOTES
             console.log(sonucAlaniDiv.className);
 
    55-) nodeType : belge içerisindeki herhangi bir Node un türünü elde etmek için kullanılır. <a href="https://developer.mozilla.org/en-us/docs/Web/API/Node/nodeType">More info <a>
+      
         ELEMENT_NODE --> 1  --> An Element node like <p> or <div>.
         ATTRIBUTE_NODE   -->2  --> 	An Attribute of an Element.
         TEXT_NODE -->3 --> The actual Text inside an Element or Attr.
@@ -439,7 +440,11 @@ JS-DOM-NOTES
        var dugumbul	=	document.getElementById("OrnekBir").nodeType;
             
    
-   56-)
+   56-) nodeName : Belge içerisindeki herhangi bir node'un (düğümün) adını elde etmek için kullanılır.
+   
+            document.getElementById("deneme").nodeName;
+   
+   57-)
 
 
 
