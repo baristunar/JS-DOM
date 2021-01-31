@@ -453,7 +453,11 @@ JS-DOM-NOTES
    
       document.getElementById("selector").childElemmentCount;
    
-   59-)
+   59-) hasChildNodes : Belge içerisindeki herhangi bir HTML elemanının alt node larının olup olmadığını kontrol ederek bool veri türünde sonucu geri döner.
+   
+       document.getElementById("id1").hasChildNodes(); --> return value would be true or false
+   
+   60-)
 
 
 
