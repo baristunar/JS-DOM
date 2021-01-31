@@ -457,7 +457,18 @@ JS-DOM-NOTES
    
        document.getElementById("id1").hasChildNodes(); --> return value would be true or false
    
-   60-)
+   60-) children 	: Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemanları elde etmek için kullanılır.
+            
+            let div = document.getElementById("id1");
+            let divChildren = div.children;
+            console.log(divChildren); 
+            for(let i = 0 ; i<divChildren.length; i++){
+                console.log(divChildren[i]);
+            }
+      
+   61-)
+   
+   62-)
 
 
 
