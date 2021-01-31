@@ -422,7 +422,24 @@ JS-DOM-NOTES
 
             console.log(sonucAlaniDiv.className);
 
-   55-)
+   55-) nodeType : belge içerisindeki herhangi bir Node un türünü elde etmek için kullanılır. <a href="https://developer.mozilla.org/en-us/docs/Web/API/Node/nodeType">More info <a>
+        ELEMENT_NODE --> 1  --> An Element node like <p> or <div>.
+        ATTRIBUTE_NODE   -->2  --> 	An Attribute of an Element.
+        TEXT_NODE -->3 --> The actual Text inside an Element or Attr.
+        CDATA_SECTION_NODE (CDATA kesit düğümü) --> 4 --> A CDATASection, such as <!CDATA[[ … ]]>.
+        ENTITY_REFERANCE_NODE (Varlık referansı düğümü) --> 5 --> An XML Entity Reference node, such as &foo;. Removed in DOM4.
+        ENTITY_NODE (Varlık düğümü) -->6 --> 	An XML <!ENTITY …> node. Removed in DOM4.
+        PROCESSION_INSTRUCTION_NODE (işlem yönergesi düğümü) -->7 --> A ProcessingInstruction of an XML document, such as <?xml-stylesheet … ?>.
+        COMMENT_NODE --> 8 --> A Comment node, such as <!-- … -->.
+        DOCUMENT_NODE --> 9  --> A Document node.
+        DOCUMENT_TYPE_NODE --> 10 --> A DocumentType node, such as <!DOCTYPE html>.
+        DOCUMENT_FRAGMENT_NODE--> 11 --> A DocumentFragment node.
+        NOTATION_NODE --> 12  --> 	An XML <!NOTATION …> node. Removed in DOM4.
+      
+       var dugumbul	=	document.getElementById("OrnekBir").nodeType;
+            
+   
+   56-)
 
 
 
