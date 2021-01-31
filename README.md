@@ -415,7 +415,18 @@ JS-DOM-NOTES
             }
 
 
- 54-)
+   54-) className = belge içerisindeki herhangi bir HTML elemanına atanmış olan class  isimlerini elde etmek veya ayarlamak için kullanılır.
+   
+            
+            let sonucAlaniDiv= document.getElementById("sonucAlani");
+
+            console.log(sonucAlaniDiv.className);
+
+   55-)
+
+
+
+
  
    
 
