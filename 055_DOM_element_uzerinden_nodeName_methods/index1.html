@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>nodeName</title>
+</head>
+
+<body>
+<p id="deneme">Ben p yim</p>
+
+<span>ben Span</span>
+<br>
+<button onclick="ornek()">Tıklayınız</button>
+<br /><br />
+<div id="sonuc"></div>
+
+<script type="text/javascript" language="javascript">
+// nodeName		:	Belge içerisindeki herhangi bir node'un (düğümün) adını elde etmek için kullanılır.
+
+function ornek(){
+	var islemyap	=	document.getElementById("deneme").nodeName;
+	document.getElementById("sonuc").innerHTML = islemyap;
+	 let a = document.querySelector("span").nodeName;
+	 document.querySelector("span").innerHTML="Ben Spanım : "+ a;
+}
+
+</script>
+</body>
+</html>
