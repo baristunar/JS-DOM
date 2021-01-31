@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childElementCount</title>
+</head>
+<body>
+    
+    <h1>
+        childElementCount : Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemnalarının sayısını elde etmek için kullanılır.
+    </h1>
+    <div id="id1">
+        <p>
+ben p'yim <!--ben pnin içerisindeki yorum satırıyım-->
+        </p>
+        <h3>ben h3</h3>
+        <span>ben span</span>
+    </div>
+
+    <script>
+let div = document.getElementById("id1");
+let divChildElementCount = div.childElementCount;
+console.log(divChildElementCount);
+    </script>
+</body>
+</html>
