@@ -385,7 +385,36 @@ JS-DOM-NOTES
         toggle : class adı ekler/kaldırır
         contains : class adı arar
       
- 
+            <div id="sonucAlani" class="bir">Js Öğreniyorum</div>
+                <script>
+            let sonucAlaniClassLists= document.getElementById("sonucAlani").classList;
+            console.log(sonucAlaniClassLists);
+
+            document.getElementById("sonucAlani").classList="bir iki uc dort";
+            let sonucAlaniDiv = document.getElementById("sonucAlani");
+            for(let i = 0 ; i<sonucAlaniDiv.classList.length;i++){
+                console.log(sonucAlaniDiv.classList.item(i));
+            }
+
+            function classListEkle(){
+                sonucAlaniDiv.classList.add("bes");
+            }
+            function classListSil(className){
+                sonucAlaniDiv.classList.remove(className);
+            }
+            console.log(sonucAlaniDiv.classList);
+
+            console.log(sonucAlaniDiv.classList.contains("bir"));
+            function classListToggle(...args){
+               for (let index = 0; index < args.length; index++) {
+                   const element = args[index];
+                sonucAlaniDiv.classList.toggle(element);
+
+               }
+               console.log(sonucAlaniDiv.classList);
+            }
+
+
  54-)
  
    
