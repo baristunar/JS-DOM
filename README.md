@@ -449,7 +449,11 @@ JS-DOM-NOTES
       document.getElementById("selector").childNodes[0].nodeValue;
           
    
-   58-)
+   58-) childElementCount : Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemnalarının sayısını elde etmek için kullanılır.
+   
+      document.getElementById("selector").childElemmentCount;
+   
+   59-)
 
 
 
