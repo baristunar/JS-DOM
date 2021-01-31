@@ -444,7 +444,10 @@ JS-DOM-NOTES
    
             document.getElementById("deneme").nodeName;
    
-   57-) 
+   57-) nodeValue: Belge içerisindeki herhangi bir node un değerini elde etmek için kullanılır. <a href="https://developer.mozilla.org/en-us/docs/Web/API/Node/nodeValue">More Info</a>
+          
+   
+   58-)
 
 
 
