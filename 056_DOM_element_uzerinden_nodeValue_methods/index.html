@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodeValue</title>
+</head>
+<body>
+    
+    <h1>
+        nodeValue: Belge içerisindeki herhangi bir node un değerini elde etmek için kullanılır.
+    </h1>
+
+    <div id="id1">
+        <p>
+ben p'yim <!--ben pnin içerisindeki yorum satırıyım-->
+        </p>
+        <h3>ben h3</h3>
+        <span>ben span</span>
+    </div>
+
+    <script>
+let div = document.getElementById("id1");
+let divChildNodes = div.childNodes;
+console.log(divChildNodes);
+for(let i = 0 ; i< divChildNodes.length; i++){
+    console.log(divChildNodes[i]);
+}
+console.log("****************************");
+divChildNodes[0].nodeValue;
+    </script>
+</body>
+</html>
