@@ -466,7 +466,9 @@ JS-DOM-NOTES
                 console.log(divChildren[i]);
             }
       
-   61-)
+   61-) childNodes : Belge içerisindeki herhangi bir HTML elemanının içerdiği alt node'ları (düğümleri) elde etmek için kullanılır.
+   
+       document.getElementById("selector").childNodes;
    
    62-)
 
