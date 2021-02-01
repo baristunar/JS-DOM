@@ -516,7 +516,12 @@ JS-DOM-NOTES
         let div1PreviousSibling = div1.previousSibling;
 
    
-   70-) 
+   70-) offsetParent : Belge içerisindeki herhangi bir HTML elemanının içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesini elde etmek için kullanılır.
+   
+            let div1OffsetParent = div1.offsetParent;
+
+   
+   71-)
    
    
 
