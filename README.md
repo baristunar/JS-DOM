@@ -494,7 +494,13 @@ JS-DOM-NOTES
       let div1LastChild = div1.lastChild;
       console.log(div1LastChild);
    
-   66-)
+   66-) nextElementSibling : Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani kardeş olan elemanlardan, belirtilecek olan elemandan sonra gelen
+        ilk elemanı elde etmek için kullanılır.
+        
+            let div1NextElementSibling = div1.nextElementSibling;
+            
+   
+   67-)
 
 
 
