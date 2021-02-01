@@ -488,7 +488,13 @@ JS-DOM-NOTES
       let div1LastElementChild = div1.lastElementChild;
       console.log(div1LastElementChild);
    
-   65-)
+   65-) lastChild : Belge içerisindeki herhangi bir HTML elemanının içerisindeki son alt node'u (düğümü) elde etmek için kullanılır.
+   
+      let div1 = document.getElementById("id1");
+      let div1LastChild = div1.lastChild;
+      console.log(div1LastChild);
+   
+   66-)
 
 
 
