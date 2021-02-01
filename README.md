@@ -505,7 +505,12 @@ JS-DOM-NOTES
    
       let div1NexSibling = div1.nextSibling;
    
-   68-)
+   68-) previousElementSibling : Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani kardeş olan elemanlardan, belirtilecek olan elemandan önce gelen
+        ilk elemanı elde etmek için kullanılır.
+        
+            let div1PreviousElementSibling = div1.previousElementSibling;
+
+   69-)
 
 
 
