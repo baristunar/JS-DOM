@@ -470,7 +470,7 @@ JS-DOM-NOTES
    
        document.getElementById("selector").childNodes;
    
-   62-) firstChildElement : Belge içerisindeki herhangi bir HTML elementinin içersdiği ilk elemenaı elde etmek için kullanılır.
+   62-) firstChildElement : Belge içerisindeki herhangi bir HTML elementinin içerdiği ilk elemanı elde etmek için kullanılır.
    
       let div1 = document.getElementById("id1");
       let div1FirstElemenChild = div1.firstElementChild;
@@ -482,7 +482,11 @@ JS-DOM-NOTES
       let div1FirstChild = div1.firstChild;
       console.log(div1FirstChild);
    
-   64-)
+   64-) lastElementChild : Belge içerisindeki herhangi bir HTML elementinin içerdiği son elemanı elde etmek için kullanılır.
+   
+      let div1 = document.getElementById("id1");
+      let div1LastElementChild = div1.lastElementChild;
+      console.log(div1LastElementChild);
    
    65-)
 
