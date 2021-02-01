@@ -500,7 +500,12 @@ JS-DOM-NOTES
             let div1NextElementSibling = div1.nextElementSibling;
             
    
-   67-)
+   67-) nextSibling : Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani kardeş olan node'lardan (düğümlerden), belirtilecek olan node'dan 
+   (düğümden) sonra gelen ilk node'u (düğümü) elde etmek için kullanılır.
+   
+      let div1NexSibling = div1.nextSibling;
+   
+   68-)
 
 
 
