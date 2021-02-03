@@ -649,7 +649,13 @@ JS-DOM-NOTES
           console.log(b);
           console.log(c);
    
-   82-)
+   82-) hasAttribute() : Belge içerisindeki herhangi bir HTML elemanının herhangi bir özelliğe sahip olup olmadığını kontrol ederek, bool veri türünde sonucu geriye döndürür.
+            
+            let a = document.getelementById(".res");
+            let b= a.hasAttributes();
+            console.log(b);
+            
+   83-)
    
 
 
