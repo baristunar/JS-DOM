@@ -564,7 +564,12 @@ JS-DOM-NOTES
          let divHooksParentParentText = divHooks.parentElement.parentElement.textContent;
          console.log(divHooksParentParentText);
    
-   75-)
+   75-) parentNode : Belge içerisindeki herhangi bir node'un bir üst node'unu elde etmek için kullanılır.
+   
+      let divJs = document.getElementById("Js");
+      let divJsParentNode = divJs.parentNode;
+   
+   76-)
    
    
 
