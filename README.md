@@ -579,7 +579,31 @@ JS-DOM-NOTES
       }
 
    
-   77-)
+   77-) removeChild() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u kaldırmak/silmek için kullanılır.
+   
+       const ekle=()=>{
+          let pYazi = document.createElement("p");
+        pYazi.textContent="Ahmet SUhan Oka ";
+          resDiv.appendChild(pYazi);
+      }
+
+      const sil=() =>{
+      let resDiv = document.getElementById("res");
+      a = resDiv.childNodes;
+           resDiv.removeChild(a[0]);
+      console.log(a);
+
+      }
+
+      const sil2=() =>{
+      let resDiv = document.getElementById("res");
+      a = resDiv.childNodes;
+           resDiv.removeChild(a[a.length-1]);
+      console.log(a);
+
+      }
+   
+   78-)
    
    
 
