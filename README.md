@@ -729,7 +729,17 @@ JS-DOM-NOTES
       div.removeAttributeNode(divClassAttr);
       console.log(div.getAttributeNames());
    
-   90-)
+   90-) clientLeft : Belge içerisindeki herhangi bir HTML elemanının sol kenarlık genişliği değerini elde etmek için kullanılır.
+   
+      document.getElementById("selector").clientLeft;
+   
+   91-) clientTop : Belge içerisindeki herhangi bir HTML elemanının üst kenarlık yüksekliği değerini elde etmek için kullanılır.
+   
+       document.getElementById("selector").clientTop;
+   
+   92-)
+   
+   93-)
    
 
 
