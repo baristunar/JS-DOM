@@ -603,7 +603,7 @@ JS-DOM-NOTES
 
       }
    
-   78-) replaceChild() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u değiştirmek için kullanılır.
+   78-) replaceChild(new,old) : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u değiştirmek için kullanılır.
    
       const degistir=() =>{
       let resDiv = document.getElementById("res");
