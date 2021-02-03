@@ -694,7 +694,19 @@ JS-DOM-NOTES
            console.log(div);
             }
    
-   87-) 
+   87-) setAttributeNode() :  Belge içerisindeki herhangi bir HTML elemanına createAttribute() metodu ile oluşturulan özellik node'unu ve değerini, node object'ine uygulamak
+            için kullanılır.
+   
+             <div id="div">asd</div>
+
+            let styleAttr = document.createAttribute("style");
+            let div = document.getElementById("div");
+            styleAttr.value="color:white;";
+            let classAttr=document.createAttribute("class");
+            classAttr.value="AhmetSuhan";
+            div.setAttributeNode(styleAttr);
+            div.setAttributeNode(classAttr);
+            console.log(div);
    
    88-)
    
