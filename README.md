@@ -733,7 +733,7 @@ JS-DOM-NOTES
    
       document.getElementById("selector").clientLeft;
    
-   91-) clientTop : Belge içerisindeki herhangi bir HTML elemanının üst kenarlık yüksekliği değerini elde etmek için kullanılır. Üst borer uzunluğunu verir.
+   91-) clientTop : Belge içerisindeki herhangi bir HTML elemanının üst kenarlık yüksekliği değerini elde etmek için kullanılır. Üst border uzunluğunu verir.
    
        document.getElementById("selector").clientTop;
    
