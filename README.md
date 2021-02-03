@@ -655,7 +655,14 @@ JS-DOM-NOTES
             let b= a.hasAttributes();
             console.log(b);
             
-   83-)
+   83-) getAttribute() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğinin değerini elde etmek için kullanılır. Eğer elementte belirtilen attribute yoksa
+            null değer geri döner.
+   
+            let div = document.getElementById("selector");
+            let divClassAttr = div.getAttribute("class");
+            console.log(dicClassAttr);
+   
+   84-) getAttributes() : 
    
 
 
