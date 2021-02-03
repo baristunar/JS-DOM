@@ -539,7 +539,18 @@ JS-DOM-NOTES
             document.getElementById("res").textContent=deger;
         }
    
-   73-)
+   73-) compareDocumentPosition() : Belge içerisinde bulunan node'ların birbirlerine göre konum değerlerini elde etmek için kullanılır.
+   
+        Return Values: 
+        2 : Belirtilen ilk node belirtilen ikinci düğümden sonra
+        4 : Belirtilen ilk node belirtilen ikinci düğümden önce
+        
+         let Js = document.getElementById("Js"); 
+          let Css = document.getElementById("Css");
+          let val = Js.compareDocumentPosition(Css);
+          console.log(val); //4
+   
+   74-)
    
    
 
