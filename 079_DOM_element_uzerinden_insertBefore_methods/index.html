@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore()</title>
+</head>
+
+<body>
+
+    <h1>
+        insertBefore(new,place) : Bir node'u belge içerisndeki belirtilecek olan herhangi bir node'un  önüne eklemek için kullanılır.
+       
+    </h1>
+
+    <button onclick="insertBefore2()">insertBefore :D</button>
+    <br><br><br>
+   <div style="width: 500px; height: 500px;border:1px solid red;" id="res">
+
+    <p id="p1">Benden önce eklenecek</p>
+   </div>
+    
+
+    <script>
+    const insertBefore2 = ()=>{
+        let newElement = document.createElement("p");
+        let textNode = document.createTextNode("Eklendim :D");
+        newElement.appendChild(textNode);
+
+        let resDivP1 = document.querySelector("#res #p1");
+        document.getElementById("res").insertBefore(newElement,resDivP1);
+    }
+    </script>
+</body>
+
+</html>
