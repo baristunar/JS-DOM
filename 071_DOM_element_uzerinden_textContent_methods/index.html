@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent</title>
+</head>
+
+<body>
+
+    <h1>
+        textContent : Belge içerisindeki herhangi bir node'un textNode larının değerini elde etmek için veya ayarlamak
+        için kullanılır.
+    </h1>
+
+
+    <button onclick="foo()" >Click</button>
+    <div onmouseover="foo2()" id="div1">Javascript (Hover over me :))</div>
+    <br><br><br>
+    <div id="res">
+        When you click the button above, This text will get your text value below the button named Click.
+    </div>
+    <script>
+        const foo = () => {
+            var deger = document.getElementById("div1").textContent;
+            document.getElementById("res").innerHTML = deger;
+        }
+        const foo2= () => {
+            var deger = document.querySelector("button").textContent;
+            document.getElementById("res").textContent=deger;
+        }
+    </script>
+</body>
+
+</html>
