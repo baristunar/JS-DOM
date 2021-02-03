@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getAttribute()</title>
+</head>
+<body>
+    <div id="res" class="header" style="color:red;" >
+
+    </div>
+
+    <script>
+        let div = document.getElementById("res");
+        let divClassAttr = div.getAttribute("class");
+        console.log(divClassAttr);
+        console.log(div.getAttribute("name"));
+    </script>
+</body>
+</html>
