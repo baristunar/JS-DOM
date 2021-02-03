@@ -662,7 +662,14 @@ JS-DOM-NOTES
             let divClassAttr = div.getAttribute("class");
             console.log(dicClassAttr);
    
-   84-) getAttributes() : 
+   84-) getAttributeNames() : Belge içerisindeki herhangi bir HTML elementinin sahip olduğu attribute isimlerini elde etmek için kullanılır.
+   
+            let div = document.getElementById("selector");
+            let a = div.getAttributeNames();
+            console.log(a); --> ["style","id","class"]
+
+   
+   85-)
    
 
 
