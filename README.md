@@ -569,7 +569,17 @@ JS-DOM-NOTES
       let divJs = document.getElementById("Js");
       let divJsParentNode = divJs.parentNode;
    
-   76-)
+   76-) appendChild() : Bir node'u belge içerisinde belirtilecek olan herhangi bir elemanın içerisine ensonda olmak üzere eklemek için kullanılır.
+   
+      const ekle=()=>{
+      let pYazi = document.createElement("p");
+       pYazi.textContent="Ahmet SUhan Oka ";
+      let resDiv = document.getElementById("res");
+       resDiv.appendChild(pYazi);
+      }
+
+   
+   77-)
    
    
 
