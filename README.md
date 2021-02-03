@@ -737,9 +737,23 @@ JS-DOM-NOTES
    
        document.getElementById("selector").clientTop;
    
-   92-)
+   92-) clientWidth : Belge içerisindeki herhangi bir HTML elemanının içerik genişliği değerini elde etmek için kullanılır. 
    
-   93-)
+      document.getElementById("selector").clientWidth;
+   
+      Hesaplama
+      Genişlik  :	padding-left + genişlik + padding-right
+      Yükseklik :	padding-top + yükseklik + padding-bottom
+   
+   93-) clientHeight : Belge içerisindeki herhangi bir HTML elemanının içerik yüksekliği değerini elde etmek için kullanılır
+   
+       document.getElementById("selector").clientHeight;
+   
+       Hesaplama
+       Genişlik  : padding-left + genişlik + padding-right
+       Yükseklik : padding-top + yükseklik + padding-bottom
+   
+   94-)
    
 
 
