@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneNode()</title>
+</head>
+
+<body>
+
+    <h1>
+        cloneNode() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u  kopyalamak için kullanılır.
+       
+    </h1>
+
+    <button onclick="copy()">Copy</button>
+   
+    
+<div id="res">
+    <p >asd</p>
+    <p>asd2</p>
+</div>
+    <script>
+        let resDiv = document.querySelector("#res");
+        const copy=()=>{
+        let copyItem = resDiv.children.item(1).cloneNode(true);
+        resDiv.firstChild.textContent=copyItem.textContent;
+        }
+
+    </script>
+</body>
+
+</html>
