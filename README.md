@@ -603,7 +603,19 @@ JS-DOM-NOTES
 
       }
    
-   78-)
+   78-) replaceChild() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u değiştirmek için kullanılır.
+   
+      const degistir=() =>{
+      let resDiv = document.getElementById("res");
+      let a = resDiv.children;
+
+      let newElement = document.createElement("p");
+      let newTextNode = document.createTextNode("ben yeniyim");
+      newElement.appendChild(newTextNode);
+      resDiv.replaceChild(newElement,resDiv.children.item(0));
+      }
+   
+   79-)
    
    
 
