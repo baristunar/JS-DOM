@@ -521,7 +521,13 @@ JS-DOM-NOTES
             let div1OffsetParent = div1.offsetParent;
 
    
-   71-)
+   71-) contains() : Belge içerisindeki herhangi bir node'un başka bir node'un alt node'u olup olmadığının bilgisini bool veri türünde geri döner.
+   
+            let div1 = document.getElementById("div1");
+            let p1 = document.getElementById("p1");
+            console.log(div1.contains(p1)); 
+   
+   72-)
    
    
 
