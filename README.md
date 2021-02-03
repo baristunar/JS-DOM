@@ -753,7 +753,19 @@ JS-DOM-NOTES
        Genişlik  : padding-left + genişlik + padding-right
        Yükseklik : padding-top + yükseklik + padding-bottom
    
-   94-)
+   94-) offsetLeft :  Belge içerisindeki herhangi bir HTML elemanının sol üst köşesi ile browser (tarayıcı) penceresinin sol üst köşesi arasındaki yatay uzaklık farkı değerini
+        elde etmek için kullanılır.
+        
+        document.getElementById("selector").offsetLeft;
+   
+   95-)offsetTop 	: Belge içerisindeki herhangi bir HTML elemanının sol üst köşesi ile browser (tarayıcı) penceresinin sol üst köşesi arasındaki dikey uzaklık farkı değerini
+      elde etmek için kullanılır.
+      
+        document.getElementById("selector").offsetTop;
+   
+   96-)
+        
+        
    
 
 
