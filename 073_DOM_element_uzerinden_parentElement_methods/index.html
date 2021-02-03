@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentElement</title>
+</head>
+
+<body>
+
+    <h1>
+        parentElement :Belge içerisindeki herhangi bir html elemanının bir üst elemanını elde etmek için kullanılır.
+       
+    </h1>
+
+    <div id="Js">
+        JS
+<div id="React">React
+    <div id="Hooks">Hooks</div>
+</div>
+
+    </div>
+    
+<div id="res"></div>
+    <script>
+   let divJs = document.getElementById("Js");
+   let divReact = document.getElementById("React");
+   let divHooks = document.getElementById("Hooks");
+
+   let divJsParent = divJs.parentElement;
+   let divReactParent = divReact.parentElement;
+   let divHooksParent = divHooks.parentElement;
+
+   let divReactParentParent = divReact.parentElement.parentElement;
+   let divHooksParentParentText = divHooks.parentElement.parentElement.textContent;
+   console.log(divHooksParentParentText);
+    </script>
+</body>
+
+</html>
