@@ -625,8 +625,21 @@ JS-DOM-NOTES
               resDiv.firstChild.textContent=copyItem.textContent;
               }
    
-   80-)
+   80-) insertBefore(new,place) : Bir node'u belge içerisndeki belirtilecek olan herhangi bir node'un  önüne eklemek için kullanılır.
    
+            new: yeni node
+            place: yeni node u bu parametrenin önüne ekliyoruz
+            
+       const insertBefore2 = ()=>{
+        let newElement = document.createElement("p");
+        let textNode = document.createTextNode("Eklendim :D");
+        newElement.appendChild(textNode);
+
+        let resDivP1 = document.querySelector("#res #p1");
+        document.getElementById("res").insertBefore(newElement,resDivP1);
+    }
+   
+   81-)
    
 
 
