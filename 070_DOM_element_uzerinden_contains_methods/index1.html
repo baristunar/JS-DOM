@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>contains()</title>
+
+</head>
+
+<body>
+<div id="alan">
+	<p id="bir">Javascript Öğreniyorum</p>
+	<p id="iki">C# Öğreniyorum</p>
+</div>
+<br /><br />
+<div id="sonuc"></div>
+
+<script type="text/javascript" language="javascript">
+
+
+var kontrol		=	document.getElementById("bir");
+var islemyap	=	document.getElementById("alan").contains(kontrol);
+document.getElementById("sonuc").innerHTML = islemyap;
+
+</script>
+</body>
+</html>
