@@ -708,7 +708,16 @@ JS-DOM-NOTES
             div.setAttributeNode(classAttr);
             console.log(div);
    
-   88-)
+   88-) removeAttribute() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğini kaldırmak/silmek için kullanılır.
+   
+      <div id="div" class="AhmetSuhan" >asd</div>
+     
+      let div = document.getElementById("div");
+      console.log(div.getAttribute("class")); --> AhmetSuhan
+      div.removeAttribute("class");
+      console.log(div.getAttribute("class")); --> null
+   
+   89-)
    
 
 
