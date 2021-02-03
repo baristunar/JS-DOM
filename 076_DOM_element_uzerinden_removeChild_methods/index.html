@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeChild()</title>
+</head>
+
+<body>
+
+    <h1>
+        removeChild() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u kaldırmak/silmek için kullanılır.
+       
+    </h1>
+
+    <button onclick="ekle()">Yazı Ekle</button>
+    <button onclick="sil()">Yazı Sil</button>
+   
+    
+<div id="res">
+    <p>asd</p>
+    <p>asd2</p>
+</div>
+    <script>
+let a ;
+let resDiv = document.getElementById("res");
+
+const ekle=()=>{
+    let pYazi = document.createElement("p");
+  pYazi.textContent="Ahmet SUhan Oka ";
+    resDiv.appendChild(pYazi);
+     
+
+}
+
+const sil=() =>{
+let resDiv = document.getElementById("res");
+a = resDiv.childNodes;
+     resDiv.removeChild(a[0]);
+console.log(a);
+
+}
+
+const sil2=() =>{
+let resDiv = document.getElementById("res");
+a = resDiv.childNodes;
+     resDiv.removeChild(a[a.length-1]);
+console.log(a);
+
+}
+
+   
+
+    </script>
+</body>
+
+</html>
