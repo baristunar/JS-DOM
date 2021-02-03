@@ -639,7 +639,17 @@ JS-DOM-NOTES
         document.getElementById("res").insertBefore(newElement,resDivP1);
     }
    
-   81-)
+   81-) hasAttribute() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğe sahip olup olmadığını kontrol ederek, bool veri türünde sonucu geriye döndürür.
+   
+        let div = document.querySelector("#res");
+          let a = div.hasAttribute("class");
+          let b = div.hasAttribute("style");
+          let c= div.hasAttributes();
+          console.log(a);
+          console.log(b);
+          console.log(c);
+   
+   82-)
    
 
 
