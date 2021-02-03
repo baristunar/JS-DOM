@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceChild()</title>
+</head>
+
+<body>
+
+    <h1>
+        replaceChild() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u değiştirmek için kullanılır.
+       
+    </h1>
+
+    <button onclick="degistir()">Change</button>
+   
+    
+<div id="res">
+    <p>asd</p>
+    <p>asd2</p>
+</div>
+    <script>
+let a ;
+let resDiv = document.getElementById("res");
+
+
+
+
+const degistir=() =>{
+let resDiv = document.getElementById("res");
+let a = resDiv.children;
+
+let newElement = document.createElement("p");
+let newTextNode = document.createTextNode("ben yeniyim");
+newElement.appendChild(newTextNode);
+resDiv.replaceChild(newElement,resDiv.children.item(0));
+}
+
+   
+
+    </script>
+</body>
+
+</html>
