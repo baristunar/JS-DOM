@@ -763,7 +763,25 @@ JS-DOM-NOTES
       
         document.getElementById("selector").offsetTop;
    
-   96-)
+   96-) offsetWidth : Belge içerisindeki herhangi bir HTML elemanının genişlik değerini elde etmek için kullanılır.
+   
+      document.getElementById("alan").offsetWidth;
+      
+      Hesaplama :
+      Genişlik			:	border-left + padding-left + genişlik + padding-right + border-right;
+      Yükseklik			:	border-top + padding-top + yükseklik + padding-bottom + border-bottom;
+      
+   
+   97-) offsetHeight : Belge içerisindeki herhangi bir HTML elemanının yükseklik değerini elde etmek için kullanılır.
+   
+      document.getElementById("alan").offsetHeight;
+      
+      Hesaplama :
+      Genişlik			:	border-left + padding-left + genişlik + padding-right + border-right;
+      Yükseklik			:	border-top + padding-top + yükseklik + padding-bottom + border-bottom;
+      
+   
+   98-)
         
         
    
