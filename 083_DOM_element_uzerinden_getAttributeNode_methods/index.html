@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getAttributeNode()</title>
+</head>
+<body>
+    
+<h1>
+    getAttributeNode() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özellik node'unun değerini elde etmek veya ayarlamak için kullanılır.
+</h1>
+<div id="res" style="width:20px;height:20px;">
+    asd
+</div>
+<script>
+    let resDiv = document.getElementById("res");
+   let a = resDiv.getAttributeNode("style");
+   console.log(a);
+   let c = resDiv.getAttributeNode("style").value;
+console.log(c);
+resDiv.getAttributeNode("style").value="color:red;";
+console.log(resDiv.getAttributeNode("style"));
+   
+ 
+
+</script>
+</body>
+</html>
