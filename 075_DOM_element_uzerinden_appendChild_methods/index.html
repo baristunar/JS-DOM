@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild()</title>
+</head>
+
+<body>
+
+    <h1>
+        appendChild() : Bir node'u belge içerisinde belirtilecek olan herhangi bir elemanın içerisine ensonda olmak üzere eklemek için kullanılır.
+       
+    </h1>
+
+   <button onclick="ekle()">Yazı Ekle</button>
+   
+    
+<div id="res"></div>
+    <script>
+
+const ekle=()=>{
+    let pYazi = document.createElement("p");
+  pYazi.textContent="Ahmet SUhan Oka ";
+let resDiv = document.getElementById("res");
+    resDiv.appendChild(pYazi);
+}
+
+   
+
+    </script>
+</body>
+
+</html>
