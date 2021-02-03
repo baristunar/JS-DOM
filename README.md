@@ -717,7 +717,19 @@ JS-DOM-NOTES
       div.removeAttribute("class");
       console.log(div.getAttribute("class")); --> null
    
-   89-)
+   89-) removeAttributeNode() : Belge içerisindeki herhangi bir HTML elemanına getAttributeNode() metodu ile belirtilmiş özellik node'unu, node object'inden kaldırmak / silmek
+        için kullanılır.
+        
+        <div id="div" class="AhmetSuhan" >asd</div>
+     
+      let div = document.getElementById("div");
+      console.log(div.getAttributeNames());
+      let divClassAttr = div.getAttributeNode("class");
+      console.log(divClassAttr);
+      div.removeAttributeNode(divClassAttr);
+      console.log(div.getAttributeNames());
+   
+   90-)
    
 
 
