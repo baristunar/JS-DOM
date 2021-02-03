@@ -680,7 +680,23 @@ JS-DOM-NOTES
             resDiv.getAttributeNode("style").value="color:red;";
             console.log(resDiv.getAttributeNode("style"));
    
-   86-)
+   86-) setAttribute("attrName","attrValue") : Belge içerisindeki herhangi bir HTML elemanına belirtilen özelliği ve değerini eklemek için kullanılır.
+      
+            const ekle=() =>{
+           let div = document.createElement("div");
+           let p = document.createElement("p");
+           p.innerText="Ahmet Suhan Oka";
+
+           div.appendChild(p);
+           div.setAttribute("style",["color:Red;","border:1px solid red;"]);
+
+           document.body.appendChild(div);
+           console.log(div);
+            }
+   
+   87-) 
+   
+   88-)
    
 
 
