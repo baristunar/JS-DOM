@@ -615,7 +615,11 @@ JS-DOM-NOTES
       resDiv.replaceChild(newElement,resDiv.children.item(0));
       }
    
-   79-)
+   79-) cloneNode() : Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u  kopyalamak için kullanılır.
+            
+            let a = document.getElentById("selector").cloneNode(true); 
+   
+   80-)
    
    
 
