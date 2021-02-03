@@ -527,7 +527,19 @@ JS-DOM-NOTES
             let p1 = document.getElementById("p1");
             console.log(div1.contains(p1)); 
    
-   72-)
+   72-) textContent :  Belge içerisindeki herhangi bir node'un textNode larının değerini elde etmek için veya ayarlamak
+        için kullanılır.
+   
+      const foo = () => {
+            var deger = document.getElementById("div1").textContent;
+            document.getElementById("res").innerHTML = deger;
+        }
+        const foo2= () => {
+            var deger = document.querySelector("button").textContent;
+            document.getElementById("res").textContent=deger;
+        }
+   
+   73-)
    
    
 
