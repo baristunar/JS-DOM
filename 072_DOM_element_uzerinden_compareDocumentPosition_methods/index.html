@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compareDocumentPosition()</title>
+</head>
+
+<body>
+
+    <h1>
+        compareDocumentPosition() : Belge içerisinde bulunan node'ların birbirlerine göre konum değerlerini elde etmek için kullanılır.
+        Return Values: 
+        2 : Belirtilen ilk node belirtilen ikinci düğümden sonra
+        4 : Belirtilen ilk node belirtilen ikinci düğümden önce
+       
+    </h1>
+
+    <div id="Js">Javascript</div>
+    <div id="Css">Css</div>
+    <div id="HTML">HTML</div>
+    <div id="Php">Php</div>
+<div id="res"></div>
+    <script>
+    let Js = document.getElementById("Js");
+    let Css = document.getElementById("Css");
+    let val = Js.compareDocumentPosition(Css);
+    console.log(val); //4
+    let HTML = document.getElementById("HTML");
+    let Php = document.getElementById("Php");
+
+    </script>
+</body>
+
+</html>
