@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentNode</title>
+</head>
+
+<body>
+
+    <h1>
+        parentNode : Belge içerisindeki herhangi bir node'un bir üst node'unu elde etmek için kullanılır.
+       
+    </h1>
+
+    <div id="Js">
+        JS
+<div id="React">React
+    <div id="Hooks">Hooks</div>
+</div>
+
+    </div>
+    
+<div id="res"></div>
+    <script>
+   let divJs = document.getElementById("Js");
+   let divReact = document.getElementById("React");
+   let divHooks = document.getElementById("Hooks");
+
+   let divJsParentNode = divJs.parentNode;
+   console.log(divJsParentNode);
+
+   
+
+    </script>
+</body>
+
+</html>
