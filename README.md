@@ -550,7 +550,21 @@ JS-DOM-NOTES
           let val = Js.compareDocumentPosition(Css);
           console.log(val); //4
    
-   74-)
+   74-) Element.parenElement : Belge içerisindeki herhangi bir html elemanının bir üst elemanını elde etmek için kullanılır.
+   
+         let divJs = document.getElementById("Js");
+         let divReact = document.getElementById("React");
+         let divHooks = document.getElementById("Hooks");
+
+         let divJsParent = divJs.parentElement;
+         let divReactParent = divReact.parentElement;
+         let divHooksParent = divHooks.parentElement;
+
+         let divReactParentParent = divReact.parentElement.parentElement;
+         let divHooksParentParentText = divHooks.parentElement.parentElement.textContent;
+         console.log(divHooksParentParentText);
+   
+   75-)
    
    
 
