@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute()</title>
+</head>
+<body>
+    
+<h1>
+    setAttribute() :Belge içerisindeki herhangi bir HTML elemanına belirtilen özelliği ve değerini eklemek için kullanılır.
+</h1>
+
+<button onclick="ekle()">Ekle</button>
+<script>
+
+   
+ const ekle=() =>{
+     let div = document.createElement("div");
+     let p = document.createElement("p");
+     p.innerText="Ahmet Suhan Oka";
+
+     div.appendChild(p);
+     div.setAttribute("style",["color:Red;","border:1px solid red;"]);
+
+     document.body.appendChild(div);
+     console.log(div);
+
+ }
+
+</script>
+</body>
+</html>
