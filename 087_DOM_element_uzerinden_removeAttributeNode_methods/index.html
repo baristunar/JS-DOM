@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeAttributeNode()</title>
+</head>
+<body>
+    
+<h1>
+    removeAttributeNode() :  Belge içerisindeki herhangi bir HTML elemanına getAttributeNode() metodu ile belirtilmiş özellik node'unu, node object'inden kaldırmak / silmek için kullanılır.
+</h1>
+
+<div id="div" class="AhmetSuhan" >asd</div>
+<script>
+let div = document.getElementById("div");
+console.log(div.getAttributeNames());
+let divClassAttr = div.getAttributeNode("class");
+console.log(divClassAttr);
+div.removeAttributeNode(divClassAttr);
+console.log(div.getAttributeNames());
+
+</script>
+</body>
+</html>
