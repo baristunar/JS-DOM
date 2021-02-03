@@ -669,7 +669,18 @@ JS-DOM-NOTES
             console.log(a); --> ["style","id","class"]
 
    
-   85-)
+   85-) getAttributeNode() : Belge içerisindeki herhangi bir HTML elemanının belirtilen özellik node'unun değerini elde etmek veya ayarlamak için kullanılır.
+            document.getElementById("selector").getAttributeNode("attrName").value; ile attribute nin değerini alıp değiştirebilirsin.
+            
+                let resDiv = document.getElementById("res");
+               let a = resDiv.getAttributeNode("style");
+               console.log(a);
+               let c = resDiv.getAttributeNode("style").value;
+            console.log(c);
+            resDiv.getAttributeNode("style").value="color:red;";
+            console.log(resDiv.getAttributeNode("style"));
+   
+   86-)
    
 
 
