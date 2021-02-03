@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeAttribute()</title>
+</head>
+<body>
+    
+<h1>
+    removeAttribute() :  Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğini kaldırmak/silmek için kullanılır
+</h1>
+
+<div id="div" class="AhmetSuhan" >asd</div>
+<script>
+let div = document.getElementById("div");
+console.log(div.getAttribute("class"));
+div.removeAttribute("class");
+console.log(div.getAttribute("class"));
+
+</script>
+</body>
+</html>
