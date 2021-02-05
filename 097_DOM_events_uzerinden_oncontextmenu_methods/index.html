@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>oncontextmenu()</title>
+
+
+</head>
+
+<body>
+
+<h1>
+	oncontextmenu() : Belge içerisindeki herhangi bir elemana mouse ile sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+</h1>
+
+<div id="div1">sağ tıkla</div>
+
+<script>
+
+let div1 = document.getElementById("div1");
+
+const foo=()=>{
+alert("aç");
+}
+function evetHandler(){
+	div1.addEventListener("contextmenu",foo);
+
+}
+evetHandler();
+</script>
+</body>
+</html>
