@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>onmousewheel() || onwheel()</title>
+<style>
+	body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  width: 105px;
+  height: 105px;
+  background: #cdf;
+  padding: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+	onmousewheel() || onwheel() : Belge içerisindeki herhangi bir elemana mouse ile sol basılı duran tıklama bırakıldığında belirtilecek olan fonksiyon çalışır.
+</h1>
+<br><br><br>
+
+<div>Scale me with your mouse wheel.</div>
+
+<script>
+function zoom(event) {
+  event.preventDefault();
+
+  scale += event.deltaY * -0.01;
+
+  // Restrict scale
+  scale = Math.min(Math.max(.125, scale), 4);
+
+  // Apply scale transform
+  el.style.transform = `scale(${scale})`;
+}
+
+let scale = 1;
+const el = document.querySelector('div');
+el.onwheel = zoom;
+</script>
+</body>
+</html>
