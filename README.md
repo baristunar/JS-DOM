@@ -877,7 +877,17 @@ JS-DOM-NOTES
    
    	Element.addEventListener("mouseleave",foo);
    
-   9-)
+   9-) onmousemove() || "mousemove": Belge içerisindeki herhangi bir elemanın mouse ile kapsama alanında gezildiğinde belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("mousemove",foo);
+   
+   10-) onmouseup() || "mouseup" : Belge içerisindeki herhangi bir elemana mouse ile sol basılı duran tıklama bırakıldığında belirtilecek olan fonksiyon çalışır.
+   	
+	Element.addEventListener("mouseup",foo);
+   
+   11-)
+   
+   12-)
       
       
     
