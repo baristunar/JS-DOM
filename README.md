@@ -842,7 +842,15 @@ JS-DOM-NOTES
    
        Element.addEventListener("dblclick",foo);
    
-   3-)
+   3-)onmousedown() || "mousedown" :Belge içerisindeki herhangi bir elemana mouse ile sol veya sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+      
+      div1.addEventListener("mousedown",foo);
+   
+   4-)
+   
+   5-)
+   
+   6-)
       
       
     
