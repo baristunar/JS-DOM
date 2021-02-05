@@ -811,7 +811,23 @@ JS-DOM-NOTES
             }
             EventListenerHandler();
    
-   100-)
+   100-) scrollWidth : Belge içerisindeki herhangi bir HTMl elemanının toplam yatay kaydırılma genişliği pixel değerini elde etmek için kullanılır.
+      
+      Hesaplama : 
+      Yatay (Genişlik) 	: margin-left + border-left + padding-left + genişlik + padding-right + border-right + margin-right
+      Dikey (Yükseklik) : margin-top + border-top + padding-top + yükseklik + padding-bottom + border-bottom + margin-bottom
+      
+      let a = document.getElementById("selector").scrollWidth;
+   
+   101-) scrollHeight : Belge içerisindeki herhangi bir HTMl elemanının toplam dikey kaydırılma genişliği pixel değerini elde etmek için kullanılır.
+   
+      Hesaplama : 
+      Yatay (Genişlik)  : margin-left + border-left + padding-left + genişlik + padding-right + border-right + margin-right
+      Dikey (Yükseklik)  : margin-top + border-top + padding-top + yükseklik + padding-bottom + border-bottom + margin-bottom
+      
+      let a = document.getElementById("selector").scrollHeight;
+   
+   102-) 
         
         
    
