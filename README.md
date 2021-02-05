@@ -1,4 +1,4 @@
-# JS-DOM
+# JS-DOM <a name="top"></a>
 JS-DOM-NOTES
 
 ## Events --> <a href="#jsdom-events">Click</a>
@@ -829,7 +829,7 @@ JS-DOM-NOTES
       
       let a = document.getElementById("selector").scrollHeight;
    
-## JS DOM Events <a name="jsdom-events"></a> 
+## JS DOM Events <--> <a name="jsdom-events"></a><a href="#top">Back to top</a>
    
    1-) onClick() || "click" : Belge içerisindeki herhangi bir elemana mouse ile sol tıklandığında belirtilecek olan fonksiyon çalışır.
    
@@ -885,7 +885,9 @@ JS-DOM-NOTES
    	
 	Element.addEventListener("mouseup",foo);
    
-   11-)
+   11-) onwheel() || "wheel" : Belge içerisindeki herhangi bir eleman üzerindeyken mouse'un tekerleği yukarı veya aşağı yuvarlandığında belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("wheel",foo);
    
    12-)
       
