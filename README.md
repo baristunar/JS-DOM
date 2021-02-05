@@ -869,7 +869,13 @@ JS-DOM-NOTES
    
    	Element.addEventListener("mouseout",foo);
    
-   7-)
+   7-) onmouseenter() || mouseenter : Belge içerisindeki herhangi bir elemanın mouse ile kapsama alanına giriş yapıldığında belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("mouseenter",foo);
+   
+   8-)
+   
+   9-)
       
       
     
