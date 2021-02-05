@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>scrollLeft & scrollTop</title>
+<style>
+#area{
+	width: 500px;
+	height: 500px;
+	background-color: #f90;
+	overflow: auto;
+}
+#inner-area{
+	width: 1000px;
+	height: 1000px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>
+	scrollLeft : Belge içerisindeki herhangi bir HTMl elemanının yatay kaydırılma genişliği pixel değerini elde etmek için kullanılır.
+	<br>
+	scrollTop : Belge içerisindeki herhangi bir HTMl elemanının dikey kaydırılma genişliği pixel değerini elde etmek için kullanılır.
+
+	<br>
+	
+Hesaplama : 
+Yatay (Genişlik) 	:	margin-left + border-left + padding-left + genişlik + padding-right + border-right + margin-right
+Dikey (Yükseklik) 	:	margin-top + border-top + padding-top + yükseklik + padding-bottom + border-bottom + margin-bottom
+
+</h1>
+
+<div id="area">
+	<div id="inner-area">Js</div>
+</div>
+
+<script>
+const area = document.getElementById("area");
+const ex=()=>{
+	console.log(area.scrollLeft);
+	console.log(area.scrollTop);
+
+
+}
+const EventListenerHandler=()=>{
+	area.addEventListener("scroll",ex);
+}
+EventListenerHandler();
+</script>
+
+
+</body>
+</html>
