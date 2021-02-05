@@ -781,7 +781,37 @@ JS-DOM-NOTES
       Yükseklik			:	border-top + padding-top + yükseklik + padding-bottom + border-bottom;
       
    
-   98-)
+   98-) scrollLeft : Belge içerisindeki herhangi bir HTMl elemanının yatay kaydırılma genişliği pixel değerini elde etmek için kullanılır. 
+   
+            Hesaplama : 
+            Yatay (Genişlik) 	:	margin-left + border-left + padding-left + genişlik + padding-right + border-right + margin-right
+            Dikey (Yükseklik) 	:	margin-top + border-top + padding-top + yükseklik + padding-bottom + border-bottom + margin-bottom
+            
+            const area = document.getElementById("area");
+            const ex=()=>{
+                  console.log(area.scrollLeft);
+            }
+            const EventListenerHandler=()=>{
+                  area.addEventListener("scroll",ex);
+            }
+            EventListenerHandler();
+   
+   99-) scrollTop : Belge içerisindeki herhangi bir HTMl elemanının dikey kaydırılma genişliği pixel değerini elde etmek için kullanılır.
+   
+            Hesaplama : 
+            Yatay (Genişlik) 	:	margin-left + border-left + padding-left + genişlik + padding-right + border-right + margin-right
+            Dikey (Yükseklik) 	:	margin-top + border-top + padding-top + yükseklik + padding-bottom + border-bottom + margin-bottom
+            
+            const area = document.getElementById("area");
+            const ex=()=>{
+                  console.log(area.scrollTop);
+            }
+            const EventListenerHandler=()=>{
+                  area.addEventListener("scroll",ex);
+            }
+            EventListenerHandler();
+   
+   100-)
         
         
    
