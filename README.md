@@ -846,7 +846,9 @@ JS-DOM-NOTES
       
       div1.addEventListener("mousedown",foo);
    
-   4-)
+   4-) oncontextmenu() || "contextmenu" : Belge içerisindeki herhangi bir elemana mouse ile sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+   
+       div1.addEventListener("contextmenu",foo);
    
    5-)
    
