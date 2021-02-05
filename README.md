@@ -831,7 +831,21 @@ JS-DOM-NOTES
    
 ## JS DOM Events <a name="jsdom-events"></a> 
    
-   1-)
+   1-) onClick() || "click" : Belge içerisindeki herhangi bir elemana mouse ile sol tıklandığında belirtilecek olan fonksiyon çalışır.
+   
+         let a = document.getElementById("selector");
+          a.addEventListener("click",function(){
+            //do somethin here
+            });
+   
+   2-) ondblClick() || "dblClik" : Belge içerisindeki herhangi bir elemana mouse (fare) ile çift sol tıklandığında belirtilecek olan fonksiyon çalışır.
+   
+       Element.addEventListener("dblclick",foo);
+   
+   3-)
+      
+      
+    
 
         
         
