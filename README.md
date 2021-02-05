@@ -865,7 +865,9 @@ JS-DOM-NOTES
 	      });
       });
    
-   6-) 
+   6-) onmouseout || mouseout : Belge içerisindeki herhangi bir elemanın mouse ile üzerinden gidildiğinde belirtilecek olan fonksiyon çalışır. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event">More Info</a>
+   
+   	Element.addEventListener("mouseout",foo);
    
    7-)
       
