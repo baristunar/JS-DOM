@@ -885,7 +885,9 @@ JS-DOM-NOTES
    	
 	Element.addEventListener("mouseup",foo);
    
-   11-)
+   11-) onwheel() || "wheel" : Belge içerisindeki herhangi bir eleman üzerindeyken mouse'un tekerleği yukarı veya aşağı yuvarlandığında belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("wheel",foo);
    
    12-)
       
