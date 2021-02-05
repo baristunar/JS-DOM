@@ -873,7 +873,9 @@ JS-DOM-NOTES
    
    	Element.addEventListener("mouseenter",foo);
    
-   8-)
+   8-) onmouseleave() || "mouseleave" : Belge içerisindeki herhangi bir elemanın mouse ile kapsama alanından çıkış yapıldığında belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("mouseleave",foo);
    
    9-)
       
