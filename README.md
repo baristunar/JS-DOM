@@ -1,6 +1,8 @@
 # JS-DOM
 JS-DOM-NOTES
 
+## Events --> <a href="#jsdom-events">Click</a>
+
 ## Methods
 
 1-) document.doctype : Belge döküman türü referansını elde etmek için kullanılır. Eğer ki belgenin doctypeını öğrenmek istiyorsak bu methodu kullanmamız yeterli olacaktır.
@@ -827,7 +829,10 @@ JS-DOM-NOTES
       
       let a = document.getElementById("selector").scrollHeight;
    
-   102-) 
+## JS DOM Events <a name="jsdom-events"></a> 
+   
+   1-)
+
         
         
    
