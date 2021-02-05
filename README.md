@@ -851,9 +851,23 @@ JS-DOM-NOTES
    
        Element.addEventListener("contextmenu",foo);
    
-   5-)
+   5-) onmouseover() || "mouseover" : Belge içerisindeki herhangi bir elemanın mouse ile üzerine gelindiğinde belirtilecek olan fonksiyon çalışır.
    
-   6-)
+      let divs = document.querySelectorAll("div");
+      console.log(divs);
+      divs.forEach(e=>{
+	e.addEventListener("mouseover",function(e){
+		this.style.backgroundColor="#f90";
+	});
+
+	e.addEventListener("mouseout",function(e){
+		this.style.backgroundColor="red";
+	      });
+      });
+   
+   6-) 
+   
+   7-)
       
       
     
