@@ -1,4 +1,4 @@
-# JS-DOM
+# JS-DOM <a name="top"></a>
 JS-DOM-NOTES
 
 ## Events --> <a href="#jsdom-events">Click</a>
@@ -829,7 +829,7 @@ JS-DOM-NOTES
       
       let a = document.getElementById("selector").scrollHeight;
    
-## JS DOM Events <a name="jsdom-events"></a> 
+## JS DOM Events <--> <a name="jsdom-events"></a><a href="#top">Back to top</a>
    
    1-) onClick() || "click" : Belge içerisindeki herhangi bir elemana mouse ile sol tıklandığında belirtilecek olan fonksiyon çalışır.
    
