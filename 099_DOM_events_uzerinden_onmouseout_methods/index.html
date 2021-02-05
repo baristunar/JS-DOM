@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>onmouseout()</title>
+<style>
+	.box{
+		width: 200px;
+		height:200px;
+		border:1px solid;
+		background-color: red;
+		float: left;
+		margin-right: 10px;
+	}
+	.b{
+		background-color: blue;
+
+	}
+	.o{
+		background-color: #f90;
+	}
+	.circle{
+		border-radius: 100%;
+	}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+	onmouseout() : Belge içerisindeki herhangi bir elemanın mouse ile üzerinden gidildiğinde belirtilecek olan fonksiyon çalışır.
+</h1>
+
+<div id="div1" class="box">üzerime gel</div>
+<div id="div2" class="box">üzerime gel</div>
+<div id="div3" class="box">üzerime gel</div>
+<div id="div4" class="box">üzerime gel</div>
+
+
+<script>
+
+let divs = document.querySelectorAll("div");
+console.log(divs);
+divs.forEach(e=>{
+	e.addEventListener("mouseover",function(e){
+		this.style.backgroundColor="#f90";
+	});
+
+	e.addEventListener("mouseout",function(e){
+		this.style.backgroundColor="red";
+	});
+});
+
+
+</script>
+</body>
+</html>

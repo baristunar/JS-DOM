@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>onmouseout()</title>
+</head>
+
+<body>
+<div onmouseover="aktifbir()" onmouseout="pasifbir()">Aso Js</div>
+<div onmouseover="aktifiki()" onmouseout="pasifiki()">Aso Php</div>
+<div onmouseover="aktifuc()" onmouseout="pasifuc()">Aso Html</div>
+<div onmouseover="aktifdort()" onmouseout="pasifdort()">Aso Css</div>
+<div onmouseover="aktifbes()" onmouseout="pasifbes()">Aso Python</div>
+
+<script type="text/javascript" language="javascript">
+// onmouseout 	:	Belge içerisindeki herhangi bir elemanın mouse (fare) ile üzerinden gidildiğinde belirtilecek olan fonksiyon çalışır.
+
+function aktifbir(){
+	document.getElementsByTagName("DIV")[0].style.backgroundColor = "#F1F1F1";
+}
+function pasifbir(){
+	document.getElementsByTagName("DIV")[0].style.backgroundColor = "white";
+}
+
+function aktifiki(){
+	document.getElementsByTagName("DIV")[1].style.backgroundColor = "#F1F1F1";
+}
+function pasifiki(){
+	document.getElementsByTagName("DIV")[1].style.backgroundColor = "white";
+}
+
+function aktifuc(){
+	document.getElementsByTagName("DIV")[2].style.backgroundColor = "#F1F1F1";
+}
+function pasifuc(){
+	document.getElementsByTagName("DIV")[2].style.backgroundColor = "white";
+}
+
+function aktifdort(){
+	document.getElementsByTagName("DIV")[3].style.backgroundColor = "#F1F1F1";
+}
+function pasifdort(){
+	document.getElementsByTagName("DIV")[3].style.backgroundColor = "white";
+}
+
+function aktifbes(){
+	document.getElementsByTagName("DIV")[4].style.backgroundColor = "#F1F1F1";
+}
+function pasifbes(){
+	document.getElementsByTagName("DIV")[4].style.backgroundColor = "white";
+}
+
+</script>
+</body>
+</html>
