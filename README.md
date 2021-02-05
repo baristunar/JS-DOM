@@ -848,7 +848,7 @@ JS-DOM-NOTES
    
    4-) oncontextmenu() || "contextmenu" : Belge içerisindeki herhangi bir elemana mouse ile sağ tıklandığında belirtilecek olan fonksiyon çalışır.
    
-       div1.addEventListener("contextmenu",foo);
+       Element.addEventListener("contextmenu",foo);
    
    5-)
    
