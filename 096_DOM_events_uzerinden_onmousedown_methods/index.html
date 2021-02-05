@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>onmousedown()</title>
+
+
+</head>
+
+<body>
+
+<h1>
+	onmousedown() : Belge içerisindeki herhangi bir elemana mouse ile sol veya sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+</h1>
+
+<div id="div1">İlk tık sarı ikinci tık mavi</div>
+
+<script>
+	let counter = 0 ; 
+let div1 = document.getElementById("div1");
+
+const foo=()=>{
+	counter++;
+	console.log(counter);
+	if (counter%2==0) {
+		div1.style.backgroundColor="blue";
+		div1.style.color="#fff";
+	}else{
+		div1.style.backgroundColor="yellow";
+		div1.style.color="#f90";
+	}
+}
+function evetHandler(){
+	div1.addEventListener("mousedown",foo);
+
+}
+evetHandler();
+</script>
+</body>
+</html>
