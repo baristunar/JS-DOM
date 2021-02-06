@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <h1>
+        button : Belge içerisinde mouse ile tıklama event'ı gerçekleştiğinde mouse'un  hangi tuşuna basıldığı değerini geriye döndürür. <br> 
+        /*
+        0	:	Sol Tuş
+        1	:	Orta Tuş & Tekerlek
+        2	:	Sağ Tuş
+        
+        Internet Explorer (8 ve 8 öncesi sürümleri)
+        1	:	Sol Tuş
+        2	:	Sağ Tuş
+        4	:	Orta Tuş & Tekerlek
+        */
+    </h1>
+
+
+    <button id="btn">Buraya tıkla </button>
+    <div id="res"></div>
+<script>    
+
+const btn = document.getElementById("btn");
+
+let div = document.getElementById("res");
+btn.addEventListener("mousedown",function(e){
+    div.innerHTML=e.button;
+});
+
+</script>
+</body>
+
+</html>
