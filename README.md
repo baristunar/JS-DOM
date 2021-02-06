@@ -976,7 +976,27 @@ JS-DOM-NOTES
 	  Client X/Y: ${e.clientX}, ${e.clientY}`;
          }
 	 
-   19-)
+   19-) pageX : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine / sayfaya göre mouse'un yatay konum koordinatının değerini geriye
+   döndürür.
+   
+	   let screenLog = document.querySelector('#screen-log');
+	document.addEventListener('mousemove', logKey);
+
+	function logKey(e) {
+	  screenLog.innerText = `Page X/Y: ${e.pageX}, ${e.pageY}`;
+	}
+   
+   20-) pageY : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine / sayfaya göre mouse'un dikey konum koordinatının değerini geriye döndürür.
+   
+   	let screenLog = document.querySelector('#screen-log');
+	document.addEventListener('mousemove', logKey);
+
+	function logKey(e) {
+	  screenLog.innerText = `Page X/Y: ${e.pageX}, ${e.pageY}`;
+	}
+
+   
+   21-)
    
   
    
