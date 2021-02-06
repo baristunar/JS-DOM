@@ -962,9 +962,25 @@ JS-DOM-NOTES
    
    17-) MouseEvent.clientX : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine göre mouse'un yatay konum koordinatının değerini geriye döndürür.
    
-   18-) MouseEvent.clienY : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine göre mouse'un dikey konum koordinatının değerini geriye döndürür
+  	function logKey(e) {
+	  screenLog.innerText = `
+	    Screen X/Y: ${e.screenX}, ${e.screenY}
+	    Client X/Y: ${e.clientX}, ${e.clientY}`;
+	}
+	
+  18-) MouseEvent.clienY : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine göre mouse'un dikey konum koordinatının değerini geriye döndürür
    
+	 function logKey(e) {
+	  screenLog.innerText = `
+	  Screen X/Y: ${e.screenX}, ${e.screenY}
+	  Client X/Y: ${e.clientX}, ${e.clientY}`;
+         }
+	 
    19-)
+   
+  
+   
+   
 
 	
  
