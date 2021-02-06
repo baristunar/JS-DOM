@@ -889,7 +889,28 @@ JS-DOM-NOTES
    
    	Element.addEventListener("wheel",foo);
    
-   12-)
+   12-) button : Belge içerisinde mouse ile tıklama event'ı gerçekleştiğinde mouse'un  hangi tuşuna basıldığı değerini geriye döndürür. 
+          /*
+        0	:	Sol Tuş
+        1	:	Orta Tuş & Tekerlek
+        2	:	Sağ Tuş
+        
+        Internet Explorer (8 ve 8 öncesi sürümleri)
+        1	:	Sol Tuş
+        2	:	Sağ Tuş
+        4	:	Orta Tuş & Tekerlek
+        */
+   	
+	
+	const btn = document.getElementById("btn");
+
+	let div = document.getElementById("res");
+	btn.addEventListener("mousedown",function(e){
+	    div.innerHTML=e.button;
+	});
+
+   
+   13-)
       
       
     
