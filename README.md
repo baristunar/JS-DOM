@@ -925,7 +925,21 @@ JS-DOM-NOTES
 	
 	MouseEvent.buttons;
    
-   14-) 
+   14-)   Event.detail :Belge içerisindeki mouse  ile tıklama event'ı  gerçekleştirildiğinde mouse'a  kaç defa tıklandığı sayısı değerini geriye döndürür.
+   
+   	const btn = document.getElementById("btn");
+
+	let div = document.getElementById("res");
+	btn.addEventListener("mousedown",function(e){
+	   let detail = e.detail;
+	   console.log(detail);
+	});
+   
+   	
+   
+   15-)
+   
+   16-)
 
 	
  
