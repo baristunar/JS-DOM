@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+</head>
+<body>
+    <h1>
+        buttons :Belge içerisindeki mouse  ile tıklama event'ı (olayı) gerçekleştiğinde mouse'un  hangi tuşuna veya tuşlarına basıldığı değerini geriye döndürür.
+        /*
+        1	:	Sol Tuş
+        2	:	Sağ Tuş
+        3	:	Sol Tuş ve Aynı Anda Sağ Tuş
+        4	:	Orta Tuş & Tekerlek
+        5	:	Sol Tuş ve Aynı Anda Orta Tuş & Tekerlek
+        6	:	Sağ Tuş ve Aynı Anda Orta Tuş & Tekerlek
+        8	:	4. Tuş
+        16	:	5. Tuş
+        */
+    </h1>
+
+
+    <button id="btn">Buraya tıkla </button>
+    <div id="res"></div>
+<script>    
+
+const btn = document.getElementById("btn");
+
+let div = document.getElementById("res");
+btn.addEventListener("mousedown",function(e){
+   let buttons = e.buttons;
+   console.log(buttons);
+});
+
+</script>
+</body>
+
+</html>
