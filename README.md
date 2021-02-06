@@ -925,7 +925,7 @@ JS-DOM-NOTES
 	
 	MouseEvent.buttons;
    
-   14-)   Event.detail :Belge içerisindeki mouse  ile tıklama event'ı  gerçekleştirildiğinde mouse'a  kaç defa tıklandığı sayısı değerini geriye döndürür.
+   14-)   Event.detail :Belge içerisindeki mouse  ile tıklama event'ı  gerçekleştirildiğinde mouse'a  kaç defa arka arkaya tıklandığı sayısı değerini geriye döndürür. Tıklamayı bıraktığınızda detail değeri sıfırlanır.
    
    	const btn = document.getElementById("btn");
 
