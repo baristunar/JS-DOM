@@ -960,7 +960,11 @@ JS-DOM-NOTES
 	    Client X/Y: ${e.clientX}, ${e.clientY}`;
 	}
    
-   17-)
+   17-) MouseEvent.clientX : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine göre mouse'un yatay konum koordinatının değerini geriye döndürür.
+   
+   18-) MouseEvent.clienY : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde browser penceresine göre mouse'un dikey konum koordinatının değerini geriye döndürür
+   
+   19-)
 
 	
  
