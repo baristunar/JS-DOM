@@ -901,6 +901,7 @@ JS-DOM-NOTES
         4	:	Orta Tuş & Tekerlek
         */
    	
+	MouseEvent.button;
 	
 	const btn = document.getElementById("btn");
 
@@ -910,7 +911,26 @@ JS-DOM-NOTES
 	});
 
    
-   13-)
+   13-)MouseEvent.buttons : Belge içerisindeki mouse ile tıklama event'ı gerçekleştiğinde mouse'un hangi tuşuna veya tuşlarına basıldığı değerini geriye döndürür.
+      
+   	Return Values : 
+	1	:	Sol Tuş
+	2	:	Sağ Tuş
+	3	:	Sol Tuş ve Aynı Anda Sağ Tuş
+	4	:	Orta Tuş & Tekerlek
+	5	:	Sol Tuş ve Aynı Anda Orta Tuş & Tekerlek
+	6	:	Sağ Tuş ve Aynı Anda Orta Tuş & Tekerlek
+	8	:	4. Tuş
+	16	:	5. Tuş
+	
+	MouseEvent.buttons;
+   
+   14-) 
+
+	
+ 
+	
+	
       
       
     
