@@ -937,9 +937,30 @@ JS-DOM-NOTES
    
    	
    
-   15-)
+   15-) MouseEvent.screenX : Belge içerisindeki herhangi bir mouse  event'ı gerçekleştiğinde bilgisayar ekranına göre mouse'un yatay konum koordinatının değerini geriye
+   	döndürür.
+   	
+	let screenLog = document.querySelector('#screen-log');
+	document.addEventListener('mousemove', logKey);
+
+	function logKey(e) {
+	  screenLog.innerText = `
+	    Screen X/Y: ${e.screenX}, ${e.screenY}
+	    Client X/Y: ${e.clientX}, ${e.clientY}`;
+	}
+
+   16-) MouseEvent.screenY : Belge içerisindeki herhangi bir mouse event'ı gerçekleştiğinde bilgisayar ekranına göre mouse'un dikey konum koordinatının değerini geriye döndürür.
    
-   16-)
+   	let screenLog = document.querySelector('#screen-log');
+	document.addEventListener('mousemove', logKey);
+
+	function logKey(e) {
+	  screenLog.innerText = `
+	    Screen X/Y: ${e.screenX}, ${e.screenY}
+	    Client X/Y: ${e.clientX}, ${e.clientY}`;
+	}
+   
+   17-)
 
 	
  
