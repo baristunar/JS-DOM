@@ -1008,7 +1008,18 @@ JS-DOM-NOTES
    	
 	Element.addEventListener("keyup",callBackFunc);
    
-   24-) 
+   24-) KeyboardEvent.key : Belge içerisindeki onkeypress, onkeydown, onkeyup gibi klavye eventleri gerçekleştiğinde klavyeden basılan tuşun değeri geriye döndürür.
+   
+   		let div=document.getElementById("resArea");
+		const getVal =(event) =>{
+		   let clickedButton = event.key;
+		   div.innerHTML+=clickedButton;
+		}
+		
+		
+   25-)
+   
+   26-)
    
   
    
