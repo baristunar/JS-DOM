@@ -1018,7 +1018,19 @@ JS-DOM-NOTES
 		}
 		
 		
-   25-)
+   25-) KeyboardEvent.location : Belge içerisindeki onkeydown ve onkeyup eventleri gerçekleştiğinde ilgili tuşun klavyedeki konum bilgisi değerini geriye döndürür.
+   
+   	KeyboardEvent.location;
+	
+	return values : 
+	
+	0: Standart tuşlar
+        <br>
+        1: Sol tuşlar
+        <br>
+        2: Sağ tuşlar
+        <br>
+        3: Numpad tuşlar
    
    26-)
    
