@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>altKey</title>
+</head>
+<body>
+    <h1>
+        Event.altKey : Belge içerisindeki herhangi bir event tetiklenirken alt tuşuna basılıp basılmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür.
+    </h1>
+    <div onmousedown="ornek()">Javascript Öğreniyorum</div>
+    <div id="sonucalani"></div>
+    
+<script>    
+
+function ornek(){
+	var deger	=	event.altKey;
+	if(deger==true){
+		document.getElementById("sonucalani").innerHTML = "Olay tetiklenirken alt tuşuna basıldı.";
+	}else{
+		document.getElementById("sonucalani").innerHTML = "Olay tetiklenirken alt tuşuna basılmadı.";
+	}
+}
+
+
+
+</script>
+</body>
+
+</html>
