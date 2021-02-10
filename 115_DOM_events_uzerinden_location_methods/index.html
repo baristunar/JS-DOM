@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+</head>
+<body>
+    <h1>
+        KeyboardEvent.location : Belge içerisindeki onkeydown ve onkeyup eventleri gerçekleştiğinde ilgili tuşun klavyedeki konum bilgisi değerini geriye döndürür.
+<br>
+        0: Standart tuşlar
+        <br>
+        1: Sol tuşlar
+        <br>
+        2: Sağ tuşlar
+        <br>
+        3: Numpad tuşlar
+    </h1>
+<input id="text" onkeydown="getVal(event)" type="text">
+
+   <div id="resArea"></div>
+    
+<script>    
+let div=document.getElementById("resArea");
+const getVal =(event) =>{
+   let clickedButton = event.location;
+   div.innerHTML=clickedButton;
+}
+
+
+</script>
+</body>
+
+</html>
