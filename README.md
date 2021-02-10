@@ -1038,7 +1038,9 @@ JS-DOM-NOTES
 	
 	Event.altKey;
    
-   27-)
+   27-)  Event.ctrlKey : Belge içerisindeki herhangi bir event tetiklenirken ctrl tuşuna basılıp basılmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür.
+   
+   28-)
    
    
    
