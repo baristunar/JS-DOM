@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeyup</title>
+</head>
+<body>
+    <h1>
+        onkeyup : Belge içerisinde herhangi bir eleman üzerinde klavyeden bir tuşa basılıp bırakıldığında çalışır.
+
+    </h1>
+<input onkeyup="getVal()" type="text">
+
+   
+    
+<script>    
+const getVal =() =>{
+    let a = document.querySelector("input").value;
+    let div = document.createElement("div");
+    let p = document.createElement("p");
+    document.body.appendChild(div);
+    div.appendChild(p);
+    p.textContent=a;
+}
+
+
+</script>
+</body>
+
+</html>
