@@ -996,7 +996,11 @@ JS-DOM-NOTES
 	}
 
    
-   21-)
+   21-) onkeydown : Belge içerisindeki herhangi bir eleman üzerinde klavyeden herhangi bir tuşa basıldığında belirtilecek olan fonksiyon çalışır.
+   
+   	Element.addEventListener("keydown",callBackFunc);
+   
+   22-)
    
   
    
