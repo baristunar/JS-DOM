@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key</title>
+</head>
+<body>
+    <h1>
+        KeyboardEvent.key : Belge içerisindeki onkeypress, onkeydown, onkeyup gibi klavye eventleri gerçekleştiğinde klavyeden basılan tuşun değeri geriye döndürür.
+
+    </h1>
+<input id="text" onkeyup="getVal(event)" type="text">
+
+   <div id="resArea"></div>
+    
+<script>    
+let div=document.getElementById("resArea");
+const getVal =(event) =>{
+   let clickedButton = event.key;
+   div.innerHTML+=clickedButton;
+}
+
+
+</script>
+</body>
+
+</html>
