@@ -1032,7 +1032,15 @@ JS-DOM-NOTES
         <br>
         3: Numpad tuşlar
    
-   26-)
+   26-) Event.altKey : Belge içerisindeki herhangi bir event tetiklenirken alt tuşuna basılıp basılmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür.
+   
+   	Event --> mouse,keyboar,touch
+	
+	Event.altKey;
+   
+   27-)
+   
+   
    
   
    
