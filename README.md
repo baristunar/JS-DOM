@@ -1056,7 +1056,12 @@ JS-DOM-NOTES
 	  console.log('page is fully loaded');
 	};
    
-   31-)
+   31-) onunload || unload : Sayfanın veya herhangi bir HTML elemanının kapatıldığında yada kaldırıldığında belirtilecek olan fonksiyon çalışır
+   
+   	window.addEventListener("unload", function(event) { ... });
+	window.onunload = function(event) { ... };
+   
+   32-)
    
 
    
