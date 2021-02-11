@@ -1123,7 +1123,11 @@ JS-DOM-NOTES
 	  console.log("The network connection has been lost.");
 	};
    
-   40-)
+   40-) onresize || 'resize' : Kullanıcı tarafından Browserin sayfa boyutu değiştirilmek istendiğinde belirtilecek olan fonksiyon çalışır.
+   
+   	window.addEventListener("resize",foo);
+   
+   41-)
    
 
    
