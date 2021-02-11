@@ -1079,7 +1079,19 @@ JS-DOM-NOTES
    
    	window.addEventListener("hashchange", funcRef, false);
    
-   34-)
+   34-) hashchangeEvent.oldURL : Sayfa URL'inin bağlantı bölümünde değişiklik olursa eski URL adresini geri döndürür. <a href="https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent/oldURL">Click</a> more info
+   
+   	window.addEventListener('hashchange', function(event) {
+	  console.log('Hash changed from ' + event.oldURL);
+	});
+   
+   35-) hashchangeEvent.newURL : Sayfa URL'inin bağlantı bölümünde değişiklik olursa yeni URL değerini geri döndürür. <a href='https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent/newURL'>Click</a> more info
+   
+   	window.addEventListener('hashchange', function(event) {
+	  console.log('Hash changed from ' + event.newURL);
+	});
+   
+   36-)
    
 
    
