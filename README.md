@@ -1046,8 +1046,17 @@ JS-DOM-NOTES
         geriye döndürür.
 	
 		
+   30-) onload || 'load' : Sayfanın veya herhangi bir HTML elemanının yüklnemesi tamamlandığında belirtilecek olan fonksiyon çalışır
+   	
+	window.addEventListener("load",(event)=>{
+	    console.log("Page is fully loaded");
+	});
+	
+	window.onload = (event) => {
+	  console.log('page is fully loaded');
+	};
    
-   30-)
+   31-)
    
 
    
