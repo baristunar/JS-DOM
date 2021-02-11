@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onhashchange</title>
+</head>
+<body onhashchange="ornek2()">
+    <h1>
+        onhashchange : Sayfa URL'inin bağlantı bölümünde değişiklik olursa belirtilecek fonksiyon çalışır.
+    </h1>
+
+    <button onclick="ornek()">Click</button>
+<div id="resarea"></div>
+<div id="resarea2"></div>
+
+    
+    
+<script>    
+
+function ornek(){
+	location.hash = "OrnekSayfa";
+    var val = location.hash;
+    document.getElementById("resarea").innerHTML="Hash değeri değişti : "+ val;
+}
+window.addEventListener("hashchange",function(){
+
+},false);
+
+function Ornek2(){
+    document.getElementById("resarea2").innerHTML="Hash değeri değişti : ";
+}
+
+
+</script>
+</body>
+
+</html>
