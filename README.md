@@ -1099,7 +1099,31 @@ JS-DOM-NOTES
    	
 	window.addEventLister("pagehide",func);
 	
-   38-) 
+   38-)  ononline || 'online' : Browser çevrimdışı modda çalışırken, çevrim içi modda çalışmaya başlarsa belirtilecek olan fonksiyon çalışır. 
+   
+   	// addEventListener version
+	window.addEventListener('online', (event) => {
+	    console.log("You are now connected to the network.");
+	});
+
+	// ononline version
+	window.ononline = (event) => {
+	  console.log("You are now connected to the network.");
+	};
+   
+   39-)  onoffline || 'offline': Browser çevrimiçi modda çalışırken, çevrimdışı modda çalışmaya başlarsa belirtilecek olan fonksiyon çalışır.
+   
+   	// addEventListener version
+	window.addEventListener('offline', (event) => {
+	    console.log("The network connection has been lost.");
+	});
+
+	// onoffline version
+	window.onoffline = (event) => {
+	  console.log("The network connection has been lost.");
+	};
+   
+   40-)
    
 
    
