@@ -1091,7 +1091,15 @@ JS-DOM-NOTES
 	  console.log('Hash changed from ' + event.newURL);
 	});
    
-   36-)
+   36-) onpageshow || 'pageshow' :  Sayfa kullanıcı tarafından görüntülenebiliyorsa belirtilecek olan fonksyion çalışır 
+   	
+	window.addEventLister("pageshow",func);
+	
+   37-) onpagehide || 'pagehide' : Sayfa kullanıcı tarafından görüntülenemiyorsa belirtilecek olan fonksyion çalışır 
+   	
+	window.addEventLister("pagehide",func);
+	
+   38-) 
    
 
    
