@@ -1042,7 +1042,14 @@ JS-DOM-NOTES
    
    28-) Event.shiftKey : Belge içerisindeki herhangi bir event tetiklenirken shift tuşuna basılıp basılmadığını kontrol ederek boolean veri türünde sonucu geriye döndürür.
    
-   29-)
+   29-) Event.metaKey : Belge içerisindeki herhangi bir event tetiklenirken pencere tuşuna veya emir tuşuna basılıp basılmadığını kontrol ederek boolean veri türünde sonucu
+        geriye döndürür.
+	
+		
+   
+   30-)
+   
+
    
    
    
