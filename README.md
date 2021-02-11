@@ -1075,7 +1075,9 @@ JS-DOM-NOTES
 	  delete e['returnValue'];
 	});
    
-   33-)
+   33-) onhashchange || "hashchange" : Sayfa URL'inin bağlantı bölümünde değişiklik olursa belirtilecek fonksiyon çalışır. <a href"https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange">Click</a> to more info
+   
+   	window.addEventListener("hashchange", funcRef, false);
    
    34-)
    
