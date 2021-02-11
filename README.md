@@ -1061,7 +1061,23 @@ JS-DOM-NOTES
    	window.addEventListener("unload", function(event) { ... });
 	window.onunload = function(event) { ... };
    
-   32-)
+   32-) onbeforeunload || beforeonload : Sayfanın kullanıcı tarafından yenileme ve kapatma isteklerinde işlem gerçekleştirilmeden belirtilecek olan fonksiyon çalışır
+   
+   	window.addEventListener('beforeunload', function (e) {
+	  // Cancel the event
+	  e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
+	  // Chrome requires returnValue to be set
+	  e.returnValue = '';
+	});
+	
+	window.addEventListener('beforeunload', function (e) {
+	  // the absence of a returnValue property on the event will guarantee the browser unload happens
+	  delete e['returnValue'];
+	});
+   
+   33-)
+   
+   34-)
    
 
    
