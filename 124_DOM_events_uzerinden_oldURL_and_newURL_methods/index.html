@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oldURL & newURL </title>
+</head>
+<body onhashchange="write">
+    <h1>
+        hashchangeEvent.oldURL : Sayfa URL'inin bağlantı bölümünde değişiklik olursa eski URL adresini geri döndürür. 
+        <br>
+        hashchangeEvent.newURL : Sayfa URL'inin bağlantı bölümünde değişiklik olursa yeni URL değerini geri döndürür.
+    </h1>
+
+    <button onclick="ornek()">Click</button>
+<div id="resarea"></div>
+<div id="resarea2"></div>
+
+
+
+    
+    
+<script>    
+
+function ornek(){
+	location.hash = "ASO";
+
+}
+function write(){
+    let oldAddress=event.oldURL;
+    let newAddress=event.newURL;
+    document.getElementById("resarea").innerHTML="oldAddress: "+oldAddress;
+    document.getElementById("resarea2").innerHTML="newAddress: "+newAddress;
+
+}
+
+
+</script>
+</body>
+
+</html>
