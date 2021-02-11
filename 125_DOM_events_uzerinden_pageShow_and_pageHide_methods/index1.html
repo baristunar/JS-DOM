@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageShow & pageHide</title>
+</head>
+<body onpageshow="first()" onpagehide="second()">
+
+    <h1>
+        pageShow :  Sayfa kullanıcı tarafından görüntülenebiliyorsa belirtilecek olan fonksyion çalışır 
+        <br>
+        pageHide : Sayfa kullanıcı tarafından görüntülenemiyorsa belirtilecek olan fonksyion çalışır 
+    </h1>
+    
+    <div id="resarea"></div>
+    <script>
+        function first(){
+            document.getElementById("resarea").innerHTML="Welcome on board :)";
+        }
+        function second(){
+            document.getElementById("resarea").innerHTML="Sorry...Undefined behaviour occured..Please try later";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageShow & pageHide</title>
+</head>
+<body >
+    <h1>
+        pageShow :  Sayfa kullanıcı tarafından görüntülenebiliyorsa belirtilecek olan fonksyion çalışır 
+        <br>
+        pageHide : Sayfa kullanıcı tarafından görüntülenemiyorsa belirtilecek olan fonksyion çalışır 
+    </h1>
+
+    <p>Open the console and watch the output as you navigate to and from
+        this page. Try loading new pages into this tab, then navigating forward
+        and backward through history, noting the events’ output to the log.</p>
+
+
+
+    
+    
+<script>    
+const events = [
+  "pagehide", "pageshow",
+  "unload", "load"
+];
+
+const eventLogger = event => {
+  switch (event.type) {
+    case "pagehide":
+    case "pageshow":
+      let isPersisted = event.persisted ? "persisted" : "not persisted";
+      console.log('Event:', event.type, '-', isPersisted);
+      break;
+    default:
+      console.log('Event:', event.type);
+      break;
+  }
+};
+
+events.forEach(eventName =>
+  window.addEventListener(eventName, eventLogger)
+);
+
+</script>
+</body>
+
+</html>
