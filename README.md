@@ -1131,7 +1131,19 @@ JS-DOM-NOTES
    
    	document.getElementById("selector").addEventListener("scroll",foo);
    
-   42-)
+   42-) ontoggle : Belge içerisindeki HTML details elemanının içeriği açıldığında veya kapandığında belirtelecek olan fonksiyon çalışır.
+   
+   	<details  ontoggle="ornek()">
+	    <summary>Açılır/Kapanır alan</summary>
+	    <div>Javascript</div>
+	    <div>Javascript</div>
+	    <div>Javascript</div>
+	    <div>Javascript</div>
+	    <div>Javascript</div>
+	    <div>Javascript</div>
+	</details>
+   
+   43-)
    
 
    
