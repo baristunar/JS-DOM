@@ -1143,8 +1143,10 @@ JS-DOM-NOTES
 	    <div>Javascript</div>
 	</details>
    
-   43-)
-   
+   43-) oncanplay : Medya elemanı yürütülmeye hazır olduğunda belirtilecek olan fonksiyon çalışır.
+   	
+	
+   44-)
 
    
    
