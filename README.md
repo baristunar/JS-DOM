@@ -1127,7 +1127,11 @@ JS-DOM-NOTES
    
    	window.addEventListener("resize",foo);
    
-   41-)
+   41-) onscroll || 'scroll' : Sayfanın veya herhangi bir html elemanının kaydırma çubuğu yukarı veya aşağı hareket ettirildiğinde beliritlecek olan fonksiyon çalışır.
+   
+   	document.getElementById("selector").addEventListener("scroll",foo);
+   
+   42-)
    
 
    
